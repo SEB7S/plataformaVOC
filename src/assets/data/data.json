@@ -1,0 +1,2696 @@
+[
+ [
+    {
+            "Categorias":[
+               {
+                  "Alertas":0.0,
+                  "Atencion al cliente":12.5,
+                  "Facturacion":50.0,
+                  "Otros servicios CHEC":0.0,
+                  "Servicio de energia":37.5
+               }
+            ],
+            "Chat":[
+               {
+                  "emisor":"agente",
+                  "mensaje":"Muy buenos dias Bienvenido a Chec, Mi nombre es Deysi Gil y sere su asesora durante esta consulta. "
+               },
+               {
+                  "emisor":"cliente",
+                  "mensaje":"Vea lo que pasa es que llevo mas de dos veces yendo a esa oficina de la chec para que me corrijan los datos que me estan llegando en la factura porque me esta llegando muy costosa. Ellos ya revisaron aqui el contador y me dijeron que fuera a la oficina, fui y nada no me resolvieron. Entonces ya estoy cansada de que me manden de un lado pa otro y nada de solucion, ya enestico llega la otra factura y me vuelven a cobrar un monton de plata, y yo eso asi no lo voy a pagar, que servicio tan malo en la ciudad de manizales "
+               }
+            ],
+            "Emocion":[
+               {
+                  "Contexto":"",
+                  "Emocion":"neutro",
+                  "Entidad":"",
+                  "Palabra":"pasa",
+                  "SubEmocion":"neutro",
+                  "Tipo":"",
+                  "score":"0",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"neutro",
+                  "Entidad":"",
+                  "Palabra":"llevo",
+                  "SubEmocion":"neutro",
+                  "Tipo":"",
+                  "score":"0",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"neutro",
+                  "Entidad":"",
+                  "Palabra":"yendo",
+                  "SubEmocion":"neutro",
+                  "Tipo":"",
+                  "score":"0",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"neutro",
+                  "Entidad":"",
+                  "Palabra":"oficina",
+                  "SubEmocion":"neutro",
+                  "Tipo":"Lugar",
+                  "score":"0",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"neutro",
+                  "Entidad":"",
+                  "Palabra":"chec",
+                  "SubEmocion":"neutro",
+                  "Tipo":"Empresa",
+                  "score":"0",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"Enfado",
+                  "Entidad":"",
+                  "Palabra":"corrijan",
+                  "SubEmocion":"Perjudicial",
+                  "Tipo":"",
+                  "score":"-2",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"neutro",
+                  "Entidad":"",
+                  "Palabra":"llegando",
+                  "SubEmocion":"neutro",
+                  "Tipo":"",
+                  "score":"0",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"neutro",
+                  "Entidad":"Facturacion",
+                  "Palabra":"factura",
+                  "SubEmocion":"neutro",
+                  "Tipo":"Keyword",
+                  "score":"0",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"neutro",
+                  "Entidad":"",
+                  "Palabra":"llegando",
+                  "SubEmocion":"neutro",
+                  "Tipo":"",
+                  "score":"0",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"Superlativos",
+                  "Entidad":"",
+                  "Palabra":"muy",
+                  "SubEmocion":"Superlativos",
+                  "Tipo":"",
+                  "score":"7",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"Enfado",
+                  "Entidad":"",
+                  "Palabra":"costosa",
+                  "SubEmocion":"Molestia",
+                  "Tipo":"",
+                  "score":"-5",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"Sorpresa",
+                  "Entidad":"",
+                  "Palabra":"revisaron",
+                  "SubEmocion":"Extrañeza",
+                  "Tipo":"Keyword",
+                  "score":"1",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"neutro",
+                  "Entidad":"Servicio de energia",
+                  "Palabra":"contador",
+                  "SubEmocion":"neutro",
+                  "Tipo":"Keyword",
+                  "score":"0",
+                  "subCategoria":"Contador"
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"Enfado",
+                  "Entidad":"",
+                  "Palabra":"fuera",
+                  "SubEmocion":"Adverso",
+                  "Tipo":"",
+                  "score":"-1",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"neutro",
+                  "Entidad":"",
+                  "Palabra":"oficina",
+                  "SubEmocion":"neutro",
+                  "Tipo":"Lugar",
+                  "score":"0",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"Negaciones",
+                  "Entidad":"",
+                  "Palabra":"nada",
+                  "SubEmocion":"Negaciones",
+                  "Tipo":"",
+                  "score":"-6",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"Negaciones",
+                  "Entidad":"",
+                  "Palabra":"no",
+                  "SubEmocion":"Negaciones",
+                  "Tipo":"",
+                  "score":"-6",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"Negativo",
+                  "Emocion":"Enfado",
+                  "Entidad":"Atencion al cliente",
+                  "Palabra":"resolvieron",
+                  "SubEmocion":"Descontento",
+                  "Tipo":"Keyword",
+                  "score":"-4",
+                  "subCategoria":"No solucion de inquietudes"
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"neutro",
+                  "Entidad":"",
+                  "Palabra":"estoy",
+                  "SubEmocion":"neutro",
+                  "Tipo":"",
+                  "score":"0",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"Enfado",
+                  "Entidad":"",
+                  "Palabra":"cansada",
+                  "SubEmocion":"irritado",
+                  "Tipo":"",
+                  "score":"-2",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"Enfado",
+                  "Entidad":"",
+                  "Palabra":"manden",
+                  "SubEmocion":"Adverso",
+                  "Tipo":"",
+                  "score":"-1",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"Negaciones",
+                  "Entidad":"",
+                  "Palabra":"nada",
+                  "SubEmocion":"Negaciones",
+                  "Tipo":"",
+                  "score":"-6",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"Negativo",
+                  "Emocion":"Enfado",
+                  "Entidad":"Atencion al cliente",
+                  "Palabra":"solucion",
+                  "SubEmocion":"Descontento",
+                  "Tipo":"Keyword",
+                  "score":"-4",
+                  "subCategoria":"No solucion de inquietudes"
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"neutro",
+                  "Entidad":"",
+                  "Palabra":"llega",
+                  "SubEmocion":"neutro",
+                  "Tipo":"",
+                  "score":"0",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"neutro",
+                  "Entidad":"Facturacion",
+                  "Palabra":"factura",
+                  "SubEmocion":"neutro",
+                  "Tipo":"Keyword",
+                  "score":"0",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"neutro",
+                  "Entidad":"",
+                  "Palabra":"vuelven",
+                  "SubEmocion":"neutro",
+                  "Tipo":"",
+                  "score":"0",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"Enfado",
+                  "Entidad":"Facturacion",
+                  "Palabra":"cobrar",
+                  "SubEmocion":"Insatisfecho",
+                  "Tipo":"",
+                  "score":"-1",
+                  "subCategoria":"Cobros"
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"Enfado",
+                  "Entidad":"",
+                  "Palabra":"monton",
+                  "SubEmocion":"Molesto",
+                  "Tipo":"",
+                  "score":"-1",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"Negaciones",
+                  "Entidad":"",
+                  "Palabra":"no",
+                  "SubEmocion":"Negaciones",
+                  "Tipo":"",
+                  "score":"-6",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"Negativo",
+                  "Emocion":"Enfado",
+                  "Entidad":"Facturacion",
+                  "Palabra":"pagar",
+                  "SubEmocion":"Descontento",
+                  "Tipo":"Keyword",
+                  "score":"-4",
+                  "subCategoria":"Pago de Factura"
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"neutro",
+                  "Entidad":"Servicio de energia",
+                  "Palabra":"servicio",
+                  "SubEmocion":"neutro",
+                  "Tipo":"Keyword",
+                  "score":"0",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"Superlativos",
+                  "Entidad":"",
+                  "Palabra":"tan",
+                  "SubEmocion":"Superlativos",
+                  "Tipo":"",
+                  "score":"8",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"Enfado",
+                  "Entidad":"",
+                  "Palabra":"malo",
+                  "SubEmocion":"Molestia",
+                  "Tipo":"",
+                  "score":"-5",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"neutro",
+                  "Entidad":"",
+                  "Palabra":"ciudad",
+                  "SubEmocion":"neutro",
+                  "Tipo":"Lugar",
+                  "score":"0",
+                  "subCategoria":" "
+               },
+               {
+                  "Contexto":"",
+                  "Emocion":"neutro",
+                  "Entidad":"",
+                  "Palabra":"manizales",
+                  "SubEmocion":"neutro",
+                  "Tipo":"Municipio",
+                  "score":"0",
+                  "subCategoria":" "
+               }
+            ],
+            "Empresas":[
+               {
+                  "Empresa":"chec",
+                  "repeticiones":1
+               }
+            ],
+            "Frase":[
+               {
+                  "Primera palabra":"fuera",
+                  "Ultima palabra":"resolvieron"
+               },
+               {
+                  "Primera palabra":"cansada",
+                  "Ultima palabra":"solucion"
+               },
+               {
+                  "Primera palabra":"cobrar",
+                  "Ultima palabra":"pagar"
+               },
+               {
+                  "Primera palabra":"servicio",
+                  "Ultima palabra":"malo"
+               }
+            ],
+            "Lugares":[
+               {
+                  "Lugar":"oficina",
+                  "repeticiones":2
+               },
+               {
+                  "Lugar":"ciudad",
+                  "repeticiones":1
+               },
+               {
+                  "Lugar":"manizales",
+                  "repeticiones":1
+               }
+            ],
+            "Palabras":[],
+            "Puntaje":[
+               {
+                  "Emocion predominante":"enfado",
+                  "Nivel Neutral":37.5,
+                  "Nivel de Negativismo":42.5,
+                  "Nivel de Positivismo":20.0
+               }
+            ]
+    }
+ ],    
+ [
+    {
+    "Categorias":[
+       {
+          "Alertas":0.0,
+          "Atencion al cliente":75.0,
+          "Facturacion":0.0,
+          "Otros negocios CHEC":0.0,
+          "Servicio de energia":25.0
+       }
+    ],
+    "Chat":[
+       {
+          "emisor":"agente",
+          "mensaje":"Muy buenos días Bienvenido a Chec, Mi nombre es Deysi Gil y ser\u00e9 su asesora durante esta consulta. "
+       },
+       {
+          "emisor":"cliente",
+          "mensaje":"Quiero saber por que se demoran tanto en reparar el daño estoy muy inconforme por tanta demora para reparar el daño."
+       },
+       {
+          "emisor":"agente",
+          "mensaje":"Permítame un momento por favor, vamos a consultar la información."
+       },
+       {
+          "emisor":"agente",
+          "mensaje":"Muchas gracias por su permanencia en la línea, nos informan que los daños relacionados con la queja presentada, ya están en proceso de ser arreglados."
+       },
+       {
+          "emisor":"cliente",
+          "mensaje":"Lo que pasa es que ya han pasado más de 12 horas y no se han presentado los técnicos."
+       },
+       {
+          "emisor":"agente",
+          "mensaje":"Verificando la información, me registra que la afectación se había logrado restablecer en algunas zonas y que las otras zonas están en proceso de ser solucionadas."
+       },
+       {
+          "emisor":"cliente",
+          "mensaje":"Está bien, sino que es que en el lugar donde se presentó el daño hay unas líneas que están generando chispas y puede representar un gran peligro para la comunidad."
+       },
+       {
+          "emisor":"agente",
+          "mensaje":"En este caso debemos dejar una alerta en un nuevo reporte."
+       },
+       {
+          "emisor":"cliente",
+          "mensaje":"OK, espero que lo solucionen rapido "
+       },
+       {
+          "emisor":"agente",
+          "mensaje":"¿Desea le colabore en algo más?"
+       },
+       {
+          "emisor":"cliente",
+          "mensaje":"No, eso es todo "
+       },
+       {
+          "emisor":"agente",
+          "mensaje":"Gracias por comunicarse con Chec,esperamos contar con su visita en una próxima oportunidad"
+       }
+    ],
+    "Emocion":[
+       {
+          "Contexto":"",
+          "Emocion":"Alegria",
+          "Entidad":"",
+          "Palabra":"quiero",
+          "SubEmocion":"Complacido",
+          "Tipo":"",
+          "score":"2",
+          "subCategoria":" "
+       },
+       {
+          "Contexto":"",
+          "Emocion":"Enfado",
+          "Entidad":"",
+          "Palabra":"demoran",
+          "SubEmocion":"Molestia",
+          "Tipo":"",
+          "score":"-1",
+          "subCategoria":" "
+       },
+       {
+          "Contexto":"",
+          "Emocion":"Enfado",
+          "Entidad":"",
+          "Palabra":"reparar",
+          "SubEmocion":"Molestia",
+          "Tipo":"",
+          "score":"-1",
+          "subCategoria":" "
+       },
+       {
+          "Contexto":"",
+          "Emocion":"Enfado",
+          "Entidad":"Servicio de energia",
+          "Palabra":"daño",
+          "SubEmocion":"Molestia",
+          "Tipo":"",
+          "score":"-3",
+          "subCategoria":"Daños"
+       },
+       {
+          "Contexto":"",
+          "Emocion":"neutro",
+          "Entidad":"",
+          "Palabra":"estoy",
+          "SubEmocion":"neutro",
+          "Tipo":"",
+          "score":"0",
+          "subCategoria":" "
+       },
+       {
+          "Contexto":"",
+          "Emocion":"Superlativos",
+          "Entidad":"",
+          "Palabra":"muy",
+          "SubEmocion":"Superlativos",
+          "Tipo":"",
+          "score":"7",
+          "subCategoria":" "
+       },
+       {
+          "Contexto":"",
+          "Emocion":"Enfado",
+          "Entidad":"Atencion al cliente",
+          "Palabra":"inconforme",
+          "SubEmocion":"Molestia",
+          "Tipo":"",
+          "score":"-5",
+          "subCategoria":"Atencion por parte del personal"
+       },
+       {
+          "Contexto":"",
+          "Emocion":"neutro",
+          "Entidad":"",
+          "Palabra":"tanta",
+          "SubEmocion":"neutro",
+          "Tipo":"",
+          "score":"0",
+          "subCategoria":" "
+       },
+       {
+          "Contexto":"",
+          "Emocion":"Enfado",
+          "Entidad":"Atencion al cliente",
+          "Palabra":"demora",
+          "SubEmocion":"Molestia",
+          "Tipo":"",
+          "score":"-1",
+          "subCategoria":"Demora en la atencion"
+       },
+       {
+          "Contexto":"Negativo",
+          "Emocion":"Enfado",
+          "Entidad":"",
+          "Palabra":"reparar",
+          "SubEmocion":"Molestia",
+          "Tipo":"",
+          "score":"-1",
+          "subCategoria":" "
+       },
+       {
+          "Contexto":"",
+          "Emocion":"Enfado",
+          "Entidad":"Servicio de energia",
+          "Palabra":"daño",
+          "SubEmocion":"Molestia",
+          "Tipo":"",
+          "score":"-3",
+          "subCategoria":"Daños"
+       },
+       {
+          "Contexto":"",
+          "Emocion":"Tristeza",
+          "Entidad":"",
+          "Palabra":"pasa",
+          "SubEmocion":"Triste",
+          "Tipo":"",
+          "score":"-1",
+          "subCategoria":" "
+       },
+       {
+          "Contexto":"",
+          "Emocion":"neutro",
+          "Entidad":"",
+          "Palabra":"pasado",
+          "SubEmocion":"neutro",
+          "Tipo":"",
+          "score":"0",
+          "subCategoria":" "
+       },
+       {
+          "Contexto":"",
+          "Emocion":"neutro",
+          "Entidad":"",
+          "Palabra":"horas",
+          "SubEmocion":"neutro",
+          "Tipo":"Tiempo",
+          "score":"0",
+          "subCategoria":" "
+       },
+       {
+          "Contexto":"",
+          "Emocion":"Negaciones",
+          "Entidad":"",
+          "Palabra":"no",
+          "SubEmocion":"Negaciones",
+          "Tipo":"",
+          "score":"-6",
+          "subCategoria":" "
+       },
+       {
+          "Contexto":"Negativo",
+          "Emocion":"Enfado",
+          "Entidad":"",
+          "Palabra":"presentado",
+          "SubEmocion":"Descontento",
+          "Tipo":"",
+          "score":"-4",
+          "subCategoria":" "
+       },
+       {
+          "Contexto":"",
+          "Emocion":"neutro",
+          "Entidad":"Atencion al cliente",
+          "Palabra":"tecnicos",
+          "SubEmocion":"neutro",
+          "Tipo":"",
+          "score":"0",
+          "subCategoria":"Atencion por parte del personal"
+       },
+       {
+          "Contexto":"",
+          "Emocion":"Enfado",
+          "Entidad":"Servicio de energia",
+          "Palabra":"daño",
+          "SubEmocion":"Molestia",
+          "Tipo":"",
+          "score":"-3",
+          "subCategoria":"Daños"
+       },
+       {
+          "Contexto":"",
+          "Emocion":"neutro",
+          "Entidad":"",
+          "Palabra":"lineas",
+          "SubEmocion":"neutro",
+          "Tipo":"",
+          "score":"0",
+          "subCategoria":" "
+       },
+       {
+          "Contexto":"",
+          "Emocion":"Incertidumbre",
+          "Entidad":"Servicio de energia",
+          "Palabra":"chispas",
+          "SubEmocion":"Desesperado",
+          "Tipo":"",
+          "score":"-2",
+          "subCategoria":"Lineas rotas o chispeando"
+       },
+       {
+          "Contexto":"",
+          "Emocion":"Alegria",
+          "Entidad":"",
+          "Palabra":"representar",
+          "SubEmocion":"Fascionado",
+          "Tipo":"",
+          "score":"2",
+          "subCategoria":" "
+       },
+       {
+          "Contexto":"",
+          "Emocion":"Incertidumbre",
+          "Entidad":"Servicio de energia",
+          "Palabra":"peligro",
+          "SubEmocion":"Angustiado",
+          "Tipo":"Keyword",
+          "score":"-2",
+          "subCategoria":" "
+       },
+       {
+          "Contexto":"Negativo",
+          "Emocion":"Incertidumbre",
+          "Entidad":"",
+          "Palabra":"comunidad",
+          "SubEmocion":"Angustiado",
+          "Tipo":"Lugar",
+          "score":"-4",
+          "subCategoria":" "
+       },
+       {
+          "Contexto":"",
+          "Emocion":"Alegria",
+          "Entidad":"",
+          "Palabra":"rapido",
+          "SubEmocion":"Encantado",
+          "Tipo":"",
+          "score":"1",
+          "subCategoria":" "
+       },
+       {
+          "Contexto":"",
+          "Emocion":"Negaciones",
+          "Entidad":"",
+          "Palabra":"no",
+          "SubEmocion":"Negaciones",
+          "Tipo":"",
+          "score":"-6",
+          "subCategoria":" "
+       }
+    ],
+    "Empresas":[
+ 
+    ],
+    "Frase":[
+       {
+          "Primera palabra":"demoran",
+          "Ultima palabra":"inconforme"
+       },
+       {
+          "Primera palabra":"pasado",
+          "Ultima palabra":"tecnicos"
+       },
+       {
+          "Primera palabra":"representar",
+          "Ultima palabra":"comunidad"
+       }
+    ],
+    "Lugares":[
+       {
+          "Lugar":"comunidad",
+          "repeticiones":1
+       }
+    ],
+    "Palabras":[
+ 
+    ],
+    "Puntaje":[
+       {
+          "Emocion predominante":"enfado",
+          "Nivel Neutral":12.5,
+          "Nivel de Negativismo":62.50000000000001,
+          "Nivel de Positivismo":25.0
+       }
+    ]
+    }
+ ],
+ [
+    {
+        "Categorias":[
+           {
+              "Alertas":0.0,
+              "Atencion al cliente":28.571428571428573,
+              "Facturacion":71.42857142857143,
+              "Otros negocios CHEC":0.0,
+              "Servicio de energia":0.0
+           }
+        ],
+        "Chat":[
+           {
+              "emisor":"agente",
+              "mensaje":"Buenos días Señora Cynthia Bienvenida a Chec. Mi nombre es Alejandro Salinas  y seré su asesor durante esta consulta."
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"Buenos días, lo que pasa es que no entiendo por que se aumentó el consumo en mi hogar."
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"Un momento,  ya estamos validando la información"
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"Señora Cynthia, cuántas personas viven en la casa?"
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"aquí viven muy pocas personas, es por eso que no entiendo porque la factura aumentó tanto su valor y por que el consumo está tan alto"
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"Un momento ya realizó la consulta señora Cynthia"
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"permítame un momento por favor en línea para darle la información que requiere ya estamos verificando"
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"Esta bien, por que me siento muy inconforme con el precio que debo pagar."
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"Señora Cynthia voy a proceder a escalar su caso con el área respectiva."
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"OK, gracias."
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"Le puedo ayudar en algo más?."
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"No señor."
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"Señora Cynthia ¡Fue un gusto atenderle!"
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"Esperamos contar con su visita en una próxima oportunidad."
+           }
+        ],
+        "Emocion":[
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"pasa",
+              "SubEmocion":"neutro",
+              "Tipo":"",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Negaciones",
+              "Entidad":"",
+              "Palabra":"no",
+              "SubEmocion":"Negaciones",
+              "Tipo":"",
+              "score":"-6",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"Negativo",
+              "Emocion":"Enfado",
+              "Entidad":"",
+              "Palabra":"entiendo",
+              "SubEmocion":"Descontento",
+              "Tipo":"",
+              "score":"-4",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Enfado",
+              "Entidad":"",
+              "Palabra":"aumento",
+              "SubEmocion":"Molestia",
+              "Tipo":"",
+              "score":"-1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Incertidumbre",
+              "Entidad":"Facturacion",
+              "Palabra":"consumo",
+              "SubEmocion":"Confuso",
+              "Tipo":"Keyword",
+              "score":"-1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"hogar",
+              "SubEmocion":"neutro",
+              "Tipo":"Lugar",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Superlativos",
+              "Entidad":"",
+              "Palabra":"muy",
+              "SubEmocion":"Superlativos",
+              "Tipo":"",
+              "score":"7",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"pocas",
+              "SubEmocion":"neutro",
+              "Tipo":"",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"Atencion al cliente",
+              "Palabra":"personas",
+              "SubEmocion":"neutro",
+              "Tipo":"",
+              "score":"0",
+              "subCategoria":"Atencion por parte del personal"
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Negaciones",
+              "Entidad":"",
+              "Palabra":"no",
+              "SubEmocion":"Negaciones",
+              "Tipo":"",
+              "score":"-6",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"Negativo",
+              "Emocion":"Enfado",
+              "Entidad":"",
+              "Palabra":"entiendo",
+              "SubEmocion":"Descontento",
+              "Tipo":"",
+              "score":"-4",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"Facturacion",
+              "Palabra":"factura",
+              "SubEmocion":"neutro",
+              "Tipo":"Keyword",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Enfado",
+              "Entidad":"",
+              "Palabra":"aumento",
+              "SubEmocion":"Molestia",
+              "Tipo":"",
+              "score":"-1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Incertidumbre",
+              "Entidad":"Facturacion",
+              "Palabra":"consumo",
+              "SubEmocion":"Confuso",
+              "Tipo":"Keyword",
+              "score":"-1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Superlativos",
+              "Entidad":"",
+              "Palabra":"tan",
+              "SubEmocion":"Superlativos",
+              "Tipo":"",
+              "score":"8",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Enfado",
+              "Entidad":"",
+              "Palabra":"alto",
+              "SubEmocion":"Molestia",
+              "Tipo":"",
+              "score":"-5",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Confianza",
+              "Entidad":"",
+              "Palabra":"siento",
+              "SubEmocion":"Seguridad",
+              "Tipo":"",
+              "score":"1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Superlativos",
+              "Entidad":"",
+              "Palabra":"muy",
+              "SubEmocion":"Superlativos",
+              "Tipo":"",
+              "score":"7",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Enfado",
+              "Entidad":"Atencion al cliente",
+              "Palabra":"inconforme",
+              "SubEmocion":"Molestia",
+              "Tipo":"",
+              "score":"-5",
+              "subCategoria":"Atencion por parte del personal"
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Alegria",
+              "Entidad":"",
+              "Palabra":"precio",
+              "SubEmocion":"Tranquilo",
+              "Tipo":"",
+              "score":"2",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Incertidumbre",
+              "Entidad":"",
+              "Palabra":"debo",
+              "SubEmocion":"Desesperado",
+              "Tipo":"",
+              "score":"-1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Confianza",
+              "Entidad":"Facturacion",
+              "Palabra":"pagar",
+              "SubEmocion":"Franqueza",
+              "Tipo":"Keyword",
+              "score":"1",
+              "subCategoria":"Pago de Factura"
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Alegria",
+              "Entidad":"",
+              "Palabra":"gracias",
+              "SubEmocion":"Contento",
+              "Tipo":"",
+              "score":"1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Negaciones",
+              "Entidad":"",
+              "Palabra":"no",
+              "SubEmocion":"Negaciones",
+              "Tipo":"",
+              "score":"-6",
+              "subCategoria":" "
+           }
+        ],
+        "Empresas":[
+     
+        ],
+        "Frase":[
+           {
+              "Primera palabra":"",
+              "Ultima palabra":"aumento"
+           },
+           {
+              "Primera palabra":"siento",
+              "Ultima palabra":"precio"
+           }
+        ],
+        "Lugares":[
+           {
+              "Lugar":"hogar",
+              "repeticiones":1
+           }
+        ],
+        "Palabras":[
+     
+        ],
+        "Puntaje":[
+           {
+              "Emocion predominante":"incertidumbre",
+              "Nivel Neutral":12.5,
+              "Nivel de Negativismo":54.16666666666667,
+              "Nivel de Positivismo":33.333333333333336
+           }
+        ]
+    }
+ ],
+ [
+    {
+        "Categorias":[
+           {
+              "Alertas":0.0,
+              "Atencion al cliente":0.0,
+              "Facturacion":42.85714285714286,
+              "Otros negocios CHEC":0.0,
+              "Servicio de energia":57.142857142857146
+           }
+        ],
+        "Chat":[
+           {
+              "emisor":"agente",
+              "mensaje":"Buenos días, mi nombre es Camilo Monsalve, ¿Con quien tengo el gusto de hablar?"
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"Buenos días Camilo, habla con José James Navia "
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"Como esta, como le puedo ayudar don José "
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"Camilo lo que pasa es que yo tengo una casa aquí por el barrio Colón"
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"si "
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"es de dos plantas y tengo 3 contadores y resulta que se cayó la parte como un alar de la casa y ese alar se cayó y arrancó los contadores y esos cables están en el suelo"
+           },
+           {
+              "emisor":"agente",
+              "mensaje":" y hay energía en las casas en este momento "
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"no, no hay  "
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"de acuerdo, vamos a reportar el inconveniente en este caso necesitamos entonces me de la información de cada una de las facturas para poder hacer el reporte de acuerdo"
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"si, listo "
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"tiene los números de cuenta "
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"si"
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"cual es el primero "
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"39"
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"29"
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"566"
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"566"
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"3862"
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"3862, permítame aquí un momento por favor, hay que tener en cuenta que este reporte le podrá generar cuenta de cobro, ¿acepta cuenta de cobro en caso de ser necesario?"
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"si claro "
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"ya entonces el cobro se haría directamente en la factura ustedes no le tienen que dar ningún tipo de dinero al técnico"
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"bueno, listo "
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"me lo podría recordar nuevamente ya que no me registra el número "
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"39"
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"si "
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"5663862, número de cuenta me está diciendo cierto "
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"si señor, le agradezco la permanencia, me registra en factura su nombre José James Navia Osorio en la carrera 12 No. 22-28 piso 1 Colón  "
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"si, si señor "
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"ah de acuerdo, me podría indicar nuevamente, que fue lo que causó exactamente el daño  "
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"el daño es que el alarde del tejar de la casa cierto se cayo cierto, , y como es la parte de arriba pues cayó y tiró dos contadores, uno quedo ah y los cables pues están en el suelo pues uno no se atreve a tocar nada de eso por ser energía, cierto"
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"claro que si, en ese caso tiene que tener en cuenta que voy a hacer los reportes en este momento, pero todo depende de la disponibilidad técnica que lo puedan atender el dia de hoy, el tiempo hábil de este reporte es de 24 horas, como puede que lo estén atendiendo el dia de hoy también son días hábiles, si el dia de hoy no se atiende posiblemente ya se atienda el dia lunes "
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"y una pregunta, uno puede ir quitando escombros, o que pueda hacer uno ahí"
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"pues en este caso si de pronto puede quitar los escombros y no se ubicar los contadores como en correrlos a otro lugar, pues esta bien hacer esos trabajos, pero ya no manipular mas de ahi por si de pronto "
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"pues yo digo pues por si de pronto algún cable de energía haya ahí peligroso o que "
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"porque es que en este caso..., permítame yo hago una validación, le agradezco su permanencia en la línea, disculpe la tardanza aquí estaba verificando y voy a tomar entonces un reporte también dejando la observación de los cables de energía para tratar que lo más pronto posible se pueda atender el personal "
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"si, porque es que uno del poste quedo ahi tirado entonces ese es el miedo que a uno le da cierto"
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"ah claro que si, aquí vamos entonces a reportar me indica que el barrio se llama Colon "
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"si Colon "
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"y a que número de teléfono lo podrían contactar "
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"310"
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"386"
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"3812"
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"3812?"
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"si"
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"ya, el número de reporte a esta solicitud es 4407839 en proceso de atención "
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"Listo"
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"si señor, aquí en este caso yo le pregunto, los tres contadores están en el suelo en este momento "
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"no, uno quedó en el suelo el otro se partió y otro si quedo en el punto de "
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"ah de acuerdo en este caso entonces debemos estar a la espera de la validación técnica y ya segun lo que le digan los técnicos y si tiene que hacer alguna otra solicitud para cambio de medidores o alguna otra novedad se comunica con nosotros para que la hagamos, aquí reportamos el inconveniente para que vayan y revisen las líneas aislen como un posible peligro, pero posiblemente deba hacer solicitudes para cambio de medidor señor José"
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"si, yo creo que se dañaron"
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"ya de igual forma las solicitudes las puede hacer por aca, pero debemos esperar primero la visita del personal"
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"ah bueno ok, muchas gracias hombre muy amable, entonces mejor dejar eso as\u00ed hasta que ellos lleguen "
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"si, como "
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"como la seguridad "
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"si, eso si, o quitar un poquito de escombros, pero si es mejor que ellos lleguen porque no sabemos si hay energía o no en esas líneas "
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"ah ok, bueno muchas gracias pues muy amable "
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"es con mucho gusto "
+           },
+           {
+              "emisor":"cliente",
+              "mensaje":"bueno"
+           },
+           {
+              "emisor":"agente",
+              "mensaje":"que este muy bien hasta luego"
+           }
+        ],
+        "Emocion":[
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"pasa",
+              "SubEmocion":"neutro",
+              "Tipo":"",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"casa",
+              "SubEmocion":"neutro",
+              "Tipo":"Lugar",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"barrio",
+              "SubEmocion":"neutro",
+              "Tipo":"Lugar",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"Servicio de energia",
+              "Palabra":"contadores",
+              "SubEmocion":"neutro",
+              "Tipo":"Keyword",
+              "score":"0",
+              "subCategoria":"Contador"
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Incertidumbre",
+              "Entidad":"",
+              "Palabra":"resulta",
+              "SubEmocion":"Incertidumbre",
+              "Tipo":"",
+              "score":"-1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Enfado",
+              "Entidad":"",
+              "Palabra":"cayo",
+              "SubEmocion":"Adverso",
+              "Tipo":"",
+              "score":"-1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"casa",
+              "SubEmocion":"neutro",
+              "Tipo":"Lugar",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Enfado",
+              "Entidad":"",
+              "Palabra":"cayo",
+              "SubEmocion":"Adverso",
+              "Tipo":"",
+              "score":"-1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"Servicio de energia",
+              "Palabra":"contadores",
+              "SubEmocion":"neutro",
+              "Tipo":"Keyword",
+              "score":"0",
+              "subCategoria":"Contador"
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Negaciones",
+              "Entidad":"",
+              "Palabra":"no",
+              "SubEmocion":"Negaciones",
+              "Tipo":"",
+              "score":"-6",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Negaciones",
+              "Entidad":"",
+              "Palabra":"no",
+              "SubEmocion":"Negaciones",
+              "Tipo":"",
+              "score":"-6",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Confianza",
+              "Entidad":"",
+              "Palabra":"listo",
+              "SubEmocion":"Esperanza",
+              "Tipo":"",
+              "score":"2",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Alegria",
+              "Entidad":"",
+              "Palabra":"bueno",
+              "SubEmocion":"Contento",
+              "Tipo":"",
+              "score":"3",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Confianza",
+              "Entidad":"",
+              "Palabra":"listo",
+              "SubEmocion":"Esperanza",
+              "Tipo":"",
+              "score":"2",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Enfado",
+              "Entidad":"Servicio de energia",
+              "Palabra":"daño",
+              "SubEmocion":"Molestia",
+              "Tipo":"",
+              "score":"-3",
+              "subCategoria":"Daños"
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"casa",
+              "SubEmocion":"neutro",
+              "Tipo":"Lugar",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Enfado",
+              "Entidad":"",
+              "Palabra":"cayo",
+              "SubEmocion":"Adverso",
+              "Tipo":"",
+              "score":"-1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Enfado",
+              "Entidad":"",
+              "Palabra":"cayo",
+              "SubEmocion":"Adverso",
+              "Tipo":"",
+              "score":"-1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"Servicio de energia",
+              "Palabra":"contadores",
+              "SubEmocion":"neutro",
+              "Tipo":"Keyword",
+              "score":"0",
+              "subCategoria":"Contador"
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Negaciones",
+              "Entidad":"",
+              "Palabra":"no",
+              "SubEmocion":"Negaciones",
+              "Tipo":"",
+              "score":"-6",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Negaciones",
+              "Entidad":"",
+              "Palabra":"nada",
+              "SubEmocion":"Negaciones",
+              "Tipo":"",
+              "score":"-6",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"Negativo",
+              "Emocion":"Enfado",
+              "Entidad":"Facturacion",
+              "Palabra":"energia",
+              "SubEmocion":"Descontento",
+              "Tipo":"Keyword",
+              "score":"-4",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Sorpresa",
+              "Entidad":"",
+              "Palabra":"pregunta",
+              "SubEmocion":"Inquietud",
+              "Tipo":"",
+              "score":"1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Enfado",
+              "Entidad":"",
+              "Palabra":"escombros",
+              "SubEmocion":"Molestia",
+              "Tipo":"",
+              "score":"-2",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Sorpresa",
+              "Entidad":"Servicio de energia",
+              "Palabra":"cable",
+              "SubEmocion":"Confusion",
+              "Tipo":"Keyword",
+              "score":"1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"Facturacion",
+              "Palabra":"energia",
+              "SubEmocion":"neutro",
+              "Tipo":"Keyword",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Incertidumbre",
+              "Entidad":"Servicio de energia",
+              "Palabra":"peligroso",
+              "SubEmocion":"Inseguro",
+              "Tipo":"Keyword",
+              "score":"-2",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Confianza",
+              "Entidad":"",
+              "Palabra":"listo",
+              "SubEmocion":"Esperanza",
+              "Tipo":"",
+              "score":"2",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Negaciones",
+              "Entidad":"",
+              "Palabra":"no",
+              "SubEmocion":"Negaciones",
+              "Tipo":"",
+              "score":"-6",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Alegria",
+              "Entidad":"",
+              "Palabra":"bueno",
+              "SubEmocion":"Contento",
+              "Tipo":"",
+              "score":"3",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Alegria",
+              "Entidad":"",
+              "Palabra":"gracias",
+              "SubEmocion":"Contento",
+              "Tipo":"",
+              "score":"1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Superlativos",
+              "Entidad":"",
+              "Palabra":"muy",
+              "SubEmocion":"Superlativos",
+              "Tipo":"",
+              "score":"7",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Enfado",
+              "Entidad":"",
+              "Palabra":"dejar",
+              "SubEmocion":"Molestia",
+              "Tipo":"",
+              "score":"-5",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Alegria",
+              "Entidad":"",
+              "Palabra":"seguridad",
+              "SubEmocion":"Satisfecho",
+              "Tipo":"",
+              "score":"1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Alegria",
+              "Entidad":"",
+              "Palabra":"bueno",
+              "SubEmocion":"Contento",
+              "Tipo":"",
+              "score":"3",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Alegria",
+              "Entidad":"",
+              "Palabra":"gracias",
+              "SubEmocion":"Contento",
+              "Tipo":"",
+              "score":"1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Superlativos",
+              "Entidad":"",
+              "Palabra":"muy",
+              "SubEmocion":"Superlativos",
+              "Tipo":"",
+              "score":"7",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Alegria",
+              "Entidad":"",
+              "Palabra":"bueno",
+              "SubEmocion":"Contento",
+              "Tipo":"",
+              "score":"3",
+              "subCategoria":" "
+           }
+        ],
+        "Empresas":[
+     
+        ],
+        "Frase":[
+            {
+               "Primera palabra":"resulta",
+               "Ultima palabra":"casa"
+            },
+            {
+               "Primera palabra":"alar",
+               "Ultima palabra":"contadores"
+            }   
+        ],
+        "Lugares":[
+           {
+              "Lugar":"casa",
+              "repeticiones":3
+           },
+           {
+              "Lugar":"barrio",
+              "repeticiones":1
+           }
+        ],
+        "Palabras":[
+     
+        ],
+        "Puntaje":[
+           {
+              "Emocion predominante":"incertidumbre",
+              "Nivel Neutral":21.05263157894737,
+              "Nivel de Negativismo":42.10526315789474,
+              "Nivel de Positivismo":36.8421052631579
+           }
+        ]
+    }
+ ],
+ [
+    {
+        "Categorias":[
+           {
+              "Alertas":11.764705882352942,
+              "Atencion al cliente":17.647058823529413,
+              "Facturacion":17.647058823529413,
+              "Otros negocios CHEC":0.0,
+              "Servicio de energia":52.94117647058824
+           }
+        ],
+        "Chat":[
+         {
+            "emisor":"agente",
+            "mensaje":"Buenos días, habla Yaqueline Aguirre, con quien tengo el gusto de hablar "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"buenos días, mi reina habla con Luz Yenny "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"con quien "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"de aca del barrio la unión, con Luz Yenny "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"si, en que le puedo colaborar señora Luz "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"lo que pasa es que por acá por la cuadra hay una muchacha que hace mucho tiempo vienen suspendiendo la luz cierto, en estos momentos el servicio se encuentra suspendido pero la muchacha lo conecta como de contrabando a medida que vienen y le instalan a ella la luz a nosotros nos empieza a bajar mucho la luz entonces eso este en un perjuicio muy berraco porque donde nos haga un corto ella o las personas que le colocan la luz a ella ahí entonces nos esta generando es un problema por aca "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"como así, están generando corto en este momento están sin servicio"
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"si, en este momento esa muchacha lleva mucho tiempo sin servicio yo creo que usted puede mirar ahí en la dirección si, en la dirección en sistema y se da cuenta que casa por aca en la unión sin servicio, pero ella le pide el favor a la gente que pasa por aquí en la calle que si hacen el favor y se la instalan, al momento que le instalan la luz, yo no se que es lo que tocan y ahí mismo empieza a irse la energía por aca por la casa y entonces nosotros ya tenemos miedo de que se nos genere un corto mas adelante "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"comprendo, bueno permítame por favor el numero de la cuenta, señora Luz  "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"ah si, es 37"
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"si "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"797"
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"si "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"905"
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"905"
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":" si, y en la casa donde cortan tanto el servicio es Calle 50  "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"bueno permitame por favor un momento, la cuenta esta a nombre de Castaño Carlos Arturo  "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"si, pero lo que pasa es que yo aca vivo en casa alquilada, sino que los vecinos que estábamos hablando ahorita eso entonces nos dijeron que para que les llamaran, no se si ya llamaron varios vecinos o es la primer llamada "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"bueno, pero usted en este momento esta sin el servicio "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"en estos momentos la muchacha se encuentra sin servicios "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"no, usted, usted esta sin servicio "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"ah no, yo si me encuentro con servicio, pero en este momento tengo todo bajado porque me da miedo que de pronto vuelva y otro muchacho intente a conectarla y vuelva y baje lo mismo, no se si es que lo pegan mal pegado o que, pero quedan los bombillos así titilando y los electrodomesticos tambien "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"pero entonces ella lo conecta de manera ilegal, o son los de la CHEC los que van y le conectan "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"no, ella, los de la CHEC vienen y la quitan y ella busca quien alguien de la calle que se la reconecte por la tarde y el servicio queda instalado, pero como que eso queda flojito y entonces empiezan los bombillos a titilar y a bajar pues la energía por aca no se si es que tiene ese contador ahi dañado y el contador queda haciendo como contacto con algo y entonces eso es lo que esta bajando la energía por aca "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"entonces usted en este momento tiene la energía asi que titila "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"si, "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"listo, permitame un momento por favor señora Luz, no me vaya a colgar, la llamada va a quedar en silencio, "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"bueno "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"muchas gracias por la espera en línea señora Luz, entonces lo que vamos a proceder a hacer le voy a hacer un reporte de daño cierto, de que el servicio esta oscilando en el sector, es decir, que la energía sube y baja cierto,  "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"si "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"para que entonces usted no quede pues como preocupada y sin el servicio cierto"
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"si señora "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"y aparte de eso vamos a generar entonces un reporte por fraude, listo, entonces permítame entonces vamos a generar primero el reporte de daño que posiblemente ese reporte sea por fraude a causa de eso es que la energía sube y baja y son varias viviendas a los que le pasa esto cierto "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"si señora, si "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"bueno, permítame nuevamente el nombre completo señora Luz que pena "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"Luz Yenny Ososrio"
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"listo, entonces señora Luz, yo ya le hice entonces el reporte como daño cierto, para que los técnicos vayan y verifiquen entonces porque la energía sube y baja "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"si "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"como esta titila, le recomiendo que por favor desconecte los electrodomesticos para que estos no se le vayan a dañar, listo "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"Esta bien"
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"aparte de esto, entonces voy a generar el reporte de ilegalmente, un registro de denuncia permitame, permitame un momento mas por favor señora Luz, ya voy a finalizar, ustedes se dieron cuenta que esta ilegal era cuando, que esa persona se conectaba "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"esta persona lleva con el servicio cortado mas de tres meses o cuatro, pues yo creo que ustedes llegando a verificar se dan cuenta quien es la persona, "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"si"
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"pero ella cuando se la quitan ella vuelve y la coloca de contrabando "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"¿ya van varias veces que se la quitan? Cierto"
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"si, si ya en varias veces "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"del municipio de Manizales "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"Manizales "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"entonces vamos a poner, usted me indica la dirección del predio en donde esta conectada es la Calle 50 número 7B - 56"
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"listo, tiene donde tomar nota por favor del numero con el cual queda la denuncia "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"si señora, "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"es el 13564"
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"ah bueno mi amor, mi reina le pediría le hago una pregunta, de pronto esto uno haciendo la llamada no nos genera ningún problema a nosotros como vecinos "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"no, porque en la denuncia queda de manera eh anonima"
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"si señora "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"pero yo igualmente pase voltaje oscilando en el sector debido a que usted me indica que empiezan a titilar los eh los bombillos o los... la energía "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"si señora "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"entones lo paso como daño y dejando como anotación que es por posible persona conectada de manera ilegal, entonces ya ellos tienen pues como ese conocimiento listo "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"ah bueno mi reina "
+         },
+         {
+            "emisor":"agente",
+            "mensaje":"bueno, es con todo el gusto, que tenga muy buen día señora Luz "
+         },
+         {
+            "emisor":"cliente",
+            "mensaje":"muchas gracias, hasta luego "
+         }
+      ],
+        "Emocion":[
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"barrio",
+              "SubEmocion":"neutro",
+              "Tipo":"Lugar",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"pasa",
+              "SubEmocion":"neutro",
+              "Tipo":"",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"Servicio de energia",
+              "Palabra":"servicio",
+              "SubEmocion":"neutro",
+              "Tipo":"Keyword",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Enfado",
+              "Entidad":"",
+              "Palabra":"suspendido",
+              "SubEmocion":"molesto",
+              "Tipo":"",
+              "score":"-1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Enfado",
+              "Entidad":"Alertas",
+              "Palabra":"contrabando",
+              "SubEmocion":"Hostil",
+              "Tipo":"",
+              "score":"-2",
+              "subCategoria":"Fraude"
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"nosotros",
+              "SubEmocion":"neutro",
+              "Tipo":"",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Enfado",
+              "Entidad":"",
+              "Palabra":"perjuicio",
+              "SubEmocion":"irritado",
+              "Tipo":"",
+              "score":"-2",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Superlativos",
+              "Entidad":"",
+              "Palabra":"muy",
+              "SubEmocion":"Superlativos",
+              "Tipo":"",
+              "score":"7",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"Atencion al cliente",
+              "Palabra":"personas",
+              "SubEmocion":"neutro",
+              "Tipo":"",
+              "score":"0",
+              "subCategoria":"Atencion por parte del personal"
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Incertidumbre",
+              "Entidad":"",
+              "Palabra":"problema",
+              "SubEmocion":"Desesperado",
+              "Tipo":"",
+              "score":"-2",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"Servicio de energia",
+              "Palabra":"servicio",
+              "SubEmocion":"neutro",
+              "Tipo":"Keyword",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"direccion",
+              "SubEmocion":"neutro",
+              "Tipo":"Lugar",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"direccion",
+              "SubEmocion":"neutro",
+              "Tipo":"Lugar",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"casa",
+              "SubEmocion":"neutro",
+              "Tipo":"Lugar",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"Servicio de energia",
+              "Palabra":"servicio",
+              "SubEmocion":"neutro",
+              "Tipo":"Keyword",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Enfado",
+              "Entidad":"",
+              "Palabra":"pide",
+              "SubEmocion":"Molestia",
+              "Tipo":"",
+              "score":"-1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Alegria",
+              "Entidad":"",
+              "Palabra":"favor",
+              "SubEmocion":"Complacido",
+              "Tipo":"",
+              "score":"2",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"gente",
+              "SubEmocion":"neutro",
+              "Tipo":"",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"pasa",
+              "SubEmocion":"neutro",
+              "Tipo":"",
+              "score":"-1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Alegria",
+              "Entidad":"",
+              "Palabra":"favor",
+              "SubEmocion":"Complacido",
+              "Tipo":"",
+              "score":"2",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Negaciones",
+              "Entidad":"",
+              "Palabra":"no",
+              "SubEmocion":"Negaciones",
+              "Tipo":"",
+              "score":"-6",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"Facturacion",
+              "Palabra":"energia",
+              "SubEmocion":"neutro",
+              "Tipo":"Keyword",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"casa",
+              "SubEmocion":"neutro",
+              "Tipo":"Lugar",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"nosotros",
+              "SubEmocion":"neutro",
+              "Tipo":"",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"casa",
+              "SubEmocion":"neutro",
+              "Tipo":"Lugar",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Enfado",
+              "Entidad":"",
+              "Palabra":"cortan",
+              "SubEmocion":"Adverso",
+              "Tipo":"",
+              "score":"-1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"Servicio de energia",
+              "Palabra":"servicio",
+              "SubEmocion":"neutro",
+              "Tipo":"Keyword",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"pasa",
+              "SubEmocion":"neutro",
+              "Tipo":"",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"vivo",
+              "SubEmocion":"neutro",
+              "Tipo":"",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"casa",
+              "SubEmocion":"neutro",
+              "Tipo":"Lugar",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Enfado",
+              "Entidad":"",
+              "Palabra":"llamaran",
+              "SubEmocion":"Insatisfecho",
+              "Tipo":"",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Negaciones",
+              "Entidad":"",
+              "Palabra":"no",
+              "SubEmocion":"Negaciones",
+              "Tipo":"",
+              "score":"-6",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Enfado",
+              "Entidad":"Atencion al cliente",
+              "Palabra":"llamada",
+              "SubEmocion":"Insatisfecho",
+              "Tipo":"",
+              "score":"0",
+              "subCategoria":"Atencion por parte del personal"
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"Servicio de energia",
+              "Palabra":"servicios",
+              "SubEmocion":"neutro",
+              "Tipo":"Keyword",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Negaciones",
+              "Entidad":"",
+              "Palabra":"no",
+              "SubEmocion":"Negaciones",
+              "Tipo":"",
+              "score":"-6",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Alegria",
+              "Entidad":"",
+              "Palabra":"encuentro",
+              "SubEmocion":"Complacido",
+              "Tipo":"",
+              "score":"1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"Servicio de energia",
+              "Palabra":"servicio",
+              "SubEmocion":"neutro",
+              "Tipo":"Keyword",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Negaciones",
+              "Entidad":"",
+              "Palabra":"no",
+              "SubEmocion":"Negaciones",
+              "Tipo":"",
+              "score":"-6",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Enfado",
+              "Entidad":"",
+              "Palabra":"mal",
+              "SubEmocion":"Enojado",
+              "Tipo":"",
+              "score":"-2",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Negaciones",
+              "Entidad":"",
+              "Palabra":"no",
+              "SubEmocion":"Negaciones",
+              "Tipo":"",
+              "score":"-6",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"chec",
+              "SubEmocion":"neutro",
+              "Tipo":"Empresa",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Tristeza",
+              "Entidad":"",
+              "Palabra":"reconecte",
+              "SubEmocion":"Decepcionado",
+              "Tipo":"",
+              "score":"-1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"Servicio de energia",
+              "Palabra":"servicio",
+              "SubEmocion":"neutro",
+              "Tipo":"Keyword",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Alegria",
+              "Entidad":"",
+              "Palabra":"instalado",
+              "SubEmocion":"Complacido",
+              "Tipo":"",
+              "score":"1",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"Facturacion",
+              "Palabra":"energia",
+              "SubEmocion":"neutro",
+              "Tipo":"Keyword",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Negaciones",
+              "Entidad":"",
+              "Palabra":"no",
+              "SubEmocion":"Negaciones",
+              "Tipo":"",
+              "score":"-6",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"Servicio de energia",
+              "Palabra":"contador",
+              "SubEmocion":"neutro",
+              "Tipo":"Keyword",
+              "score":"0",
+              "subCategoria":"Contador"
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"Facturacion",
+              "Palabra":"energia",
+              "SubEmocion":"neutro",
+              "Tipo":"Keyword",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Alegria",
+              "Entidad":"",
+              "Palabra":"bueno",
+              "SubEmocion":"Contento",
+              "Tipo":"",
+              "score":"3",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Enfado",
+              "Entidad":"Alertas",
+              "Palabra":"contrabando",
+              "SubEmocion":"Hostil",
+              "Tipo":"",
+              "score":"-2",
+              "subCategoria":"Fraude"
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"manizales",
+              "SubEmocion":"neutro",
+              "Tipo":"Municipio",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Alegria",
+              "Entidad":"",
+              "Palabra":"bueno",
+              "SubEmocion":"Contento",
+              "Tipo":"",
+              "score":"3",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Alegria",
+              "Entidad":"",
+              "Palabra":"amor",
+              "SubEmocion":"Contento",
+              "Tipo":"",
+              "score":"3",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Enfado",
+              "Entidad":"Atencion al cliente",
+              "Palabra":"llamada",
+              "SubEmocion":"Insatisfecho",
+              "Tipo":"",
+              "score":"0",
+              "subCategoria":"Atencion por parte del personal"
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Negaciones",
+              "Entidad":"",
+              "Palabra":"no",
+              "SubEmocion":"Negaciones",
+              "Tipo":"",
+              "score":"-6",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Negaciones",
+              "Entidad":"",
+              "Palabra":"ningun",
+              "SubEmocion":"Negaciones",
+              "Tipo":"",
+              "score":"-6",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Negaciones",
+              "Entidad":"",
+              "Palabra":"ningun",
+              "SubEmocion":"Negaciones",
+              "Tipo":"",
+              "score":"-6",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Incertidumbre",
+              "Entidad":"",
+              "Palabra":"problema",
+              "SubEmocion":"Desesperado",
+              "Tipo":"",
+              "score":"-2",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"neutro",
+              "Entidad":"",
+              "Palabra":"nosotros",
+              "SubEmocion":"neutro",
+              "Tipo":"",
+              "score":"0",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Alegria",
+              "Entidad":"",
+              "Palabra":"bueno",
+              "SubEmocion":"Contento",
+              "Tipo":"",
+              "score":"3",
+              "subCategoria":" "
+           },
+           {
+              "Contexto":"",
+              "Emocion":"Alegria",
+              "Entidad":"",
+              "Palabra":"gracias",
+              "SubEmocion":"Contento",
+              "Tipo":"",
+              "score":"1",
+              "subCategoria":" "
+           }
+        ],
+        "Empresas":[
+     
+        ],
+        "Frase":[
+           {
+              "Primera palabra":"servicio",
+              "Ultima palabra":"conecta"
+           },
+           {
+              "Primera palabra":"bajar",
+              "Ultima palabra":"berraco"
+           }
+        ],
+        "Lugares":[
+           {
+              "Lugar":"barrio",
+              "repeticiones":1
+           },
+           {
+              "Lugar":"direccion",
+              "repeticiones":2
+           },
+           {
+              "Lugar":"casa",
+              "repeticiones":4
+           },
+           {
+              "Lugar":"manizales",
+              "repeticiones":1
+           }
+        ],
+        "Palabras":[
+     
+        ],
+        "Puntaje":[
+           {
+              "Emocion predominante":"incertidumbre",
+              "Nivel Neutral":44.44444444444444,
+              "Nivel de Negativismo":39.682539682539684,
+              "Nivel de Positivismo":15.873015873015872
+           }
+        ]
+    }
+ ]
+]

@@ -1,0 +1,336 @@
+.container_image_agent{
+}
+
+.image_agent{
+    width: 25px; 
+    height: 25px;  
+}
+
+.chat-body{
+    margin-top:5px;
+    background:#f7f7f7;;
+}
+
+
+.esquina_chat:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.bg_cliente{
+    background:white;
+    __color:white;
+}
+
+.bg_azul_datalab{
+  background:#d0e5ff;
+}
+
+.chat-body.esquina_chat.esquina_chat_izq:after {
+    border-width: 0px 10px 10px 0;
+    border-color: transparent #f7f7f7 transparent transparent;
+    top: 0;
+    left: -8px;
+}
+
+.chat-body.esquina_chat.esquina_chat_der:after {
+    border-width: 0px 0 10px 10px;
+    border-color: transparent transparent transparent #f7f7f7;
+    __border-color: transparent transparent transparent #0097fe;
+
+    top: 0;
+    right: -8px;
+}
+
+.app {
+    width: 100%;
+    height: 100vh;
+    background: white;
+
+    __border: 10px solid #460a78;
+    overflow: auto;
+    __overflow-y: scroll; 
+}
+.app-inner {
+    __border: 10px solid #edb197;
+    padding: 50px;
+    background: white;
+    height: fit-content;
+}
+
+.posicion_flecha_down{
+    z-index: 2;
+    position: absolute;
+    right:0px;
+}
+
+
+
+
+/*swiper */
+.content-container {
+    position: relative;
+  
+    overflow: auto;
+    height: 100vh;
+    width: 100vw;
+    min-height: 0;
+ 
+ }
+
+ .swiper-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    __background-color: transparent;
+    background-color: rgba(255,255,255,1);
+    margin:0px;
+    padding:0px;
+    width:400px;
+
+  }
+  
+  .clientes{
+    background:white;
+    background-color:rgba(255,255,255,1);
+  }
+
+  
+  .swiper-slide {
+    __background-color: red;
+    background-color: transparent;
+    __border:1px solid red;
+    height: 400px;
+    width:200px;
+  }
+  
+  .swiper-slide-active {
+    __background-color: #aaa;
+    
+  }
+  
+  .center_contenido_slide{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
+  
+  .vertical-container,
+  .horizontal-container {
+    min-height: 0 !important;
+  }
+
+
+  .image_paralax{
+    __background: #fff fixed no-repeat 50% 50%;
+    __background-size: cover;
+    width: 20%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .solucion_image{
+    __background: #fff fixed no-repeat 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    __background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 5%;
+    box-shadow: black 1px 1px 5px;
+  }
+  
+  .subtitulos_datalab_gris{
+    color:#737373;
+  }
+
+  .carrusel_fixed{
+    transition: all 1.3s linear;
+    width:100vw;
+    __height: calc(100vh - 83px);
+    height: calc(100vh );
+    position: absolute;
+    bottom:0px;
+    left:0px;
+  }
+
+  .carrusel_inicio{
+    z-index: 2;
+    transform:translate(0%,0%) !important;
+    
+  }
+
+  .carrusel_texto{
+    transition: all 0.6s linear;
+    z-index: 3;
+    top: 50%;
+    transform: translate(0%,-50%);
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0 5vh 5vh 0;
+    color: #FFF;
+    position: absolute;
+    left: 0;
+    font-size: 10vh;
+    line-height: 15vh;
+    border: 1px solid rgba(255,255,255,.45);
+    border-left: 0 none;
+    padding-right: 16px;
+    padding-left: 16px;
+
+  }
+
+  .texto_izquierda{
+    transform: translate(-100%,-50%);
+  }
+
+
+  .header{
+    height: 83px;
+    background-color:rgba(0,0,0,0);
+    z-index: 99999 !important;
+    padding: 0px 16px;
+    transition: all 0.5s linear;
+    position: absolute;
+    border-bottom:0px solid #ED7D31;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+
+  .chulo{
+    color:green;
+  }
+  
+
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255,255, 255,1);
+    border-bottom:2px solid #ED7D31;
+
+  }
+  
+
+
+  .segunda_seccion{
+    padding-top: calc(100vh - 83px);
+    __border:1px solid red;
+  }
+
+  .logo{
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .opciones_menu > div{
+    transition: all 0.6s ease;
+    margin:0px 10px;
+    font-weight: bold;
+    color: #212529;
+  }
+
+  .opciones_menu > div:hover{
+    color:#ED7D31;
+    
+  }
+
+  .color_titulos_datalab{
+    color:#ED7D31;
+  }
+
+  .color_subtitulo_datalab{
+    color:#D0E5FF;
+
+  }
+
+  .imagen_cliente{
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .imagen_tecnologias{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  
+
+  .imagen_tecnologias{
+    /*width: 300px;
+    height: 300px;
+    /* border: solid 1px black; */
+    /*box-shadow: black 1px 1px 9px;*/
+  }
+
+  .seccion_tecnologias .no-gutters .imagen_tecnologias > div{
+    height: 200px;
+  }
+
+  .imagen_tecnologia{
+    padding: 30px;
+    position: absolute; top: 50%; left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .imagen_container{
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    margin-top:20px;
+    margin-right: 5px;
+  }
+
+  .circulo_item{
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    width: 100px;
+    height: 100px !important;
+    box-sizing: border-box;
+    box-shadow: 0 8px 19px #D0E5FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*.sombras_naranjas{
+    box-shadow: 0 8px 19px #D0E5FF;
+  }*/
+
+  .image_paralax_elemento{
+    __background: #fff fixed no-repeat 50% 50%;
+    __background-size: cover;
+    width: 20%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+  }
+
+.logo_small_antes_menu{
+  
+  position:absolute; 
+  bottom:0px;
+  display: none;
+  z-index: 1;
+  background-color: rgba(255,255,255,0.6)
+}

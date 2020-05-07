@@ -1,0 +1,237 @@
+<div class="h-100vh prueba m-0 p-0">
+
+	<div class="row no-gutters">
+		<div class="col-2 p-0 m-0">
+
+			<div class="menu_general card">
+				<!-- filtro fecha-->
+				<div class="h-100">
+					<!-- d-flex flex-column justify-content-evenly -->
+					<img src="./assets/img/datalab.png" class="logo">
+
+
+					<h5 class="mb-0 p-0 nunito mt-2 text-center"><i class="mr-1 fas fa-filter"></i>Filtros </h5>
+					<hr class="mb-2 p-0 mt-0">
+					<div style="margin-bottom:40px;">
+
+						<div class="d-flex justify-content-center flex-row my-2">
+							<div class="d-flex">
+								<div class="form-group  icon-addon addon mx-2 my-0 py-0">
+									<label for="fecha" class="mx-2 my-0 p-0 label_inputs">
+										Ingrese la Fecha</label>
+									<input type="text" id="fecha" placeholder="Ingrese Fecha" [(ngModel)]="fecha"
+										(focus)="showCalendar=true;" class="form-control mr-2">
+									<i class="icono fa fa-calendar"></i>
+									<ngb-datepicker #dp [ngStyle]="{ 'display': showCalendar?'block':'none' }"
+										[footerTemplate]="footerTemplate" class="posicion_calendario"
+										(select)="onDateSelection($event)" [displayMonths]="2" [dayTemplate]="t"
+										outsideDays="hidden">
+									</ngb-datepicker>
+									<ng-template #t let-date let-focused="focused">
+										<span class="custom-day" [class.focused]="focused" [class.range]="isRange(date)"
+											[class.faded]="isHovered(date) || isInside(date)"
+											(mouseenter)="hoveredDate = date" (mouseleave)="hoveredDate = null">
+											{{ date.day }}
+										</span>
+									</ng-template>
+									<ng-template #footerTemplate>
+										<hr class="my-0">
+										<button class="btn btn-secondary btn-sm m-2 float-right"
+											(click)="showCalendar=false;">Cerrar</button>
+									</ng-template>
+								</div>
+							</div>
+						</div>
+						<div class="my-2">
+							<autocompletar (eEnviarDatosPadre)="fn_recibirDropdow($event)"
+								[icon]="'fas fa-map-marker-alt'" [label]="'Seleccione el Municipio'"
+								[arrayFiltrado]="aMunicipios" [sFiltroenArray]="'nombre'" [bMultipleSeleccion]="true">
+							</autocompletar>
+
+						</div>
+						<div class="my-2">
+							<autocompletar (eEnviarDatosPadre)="fn_recibirDropdow($event)" [icon]="'fas fa-user'"
+								[label]="'Seleccione el Agente'" [arrayFiltrado]="aAgentes" [sFiltroenArray]="'nombre'"
+								[bMultipleSeleccion]="false"></autocompletar>
+
+						</div>
+						<div class="my-2">
+							<autocompletar (eEnviarDatosPadre)="fn_recibirDropdow($event)" [icon]="'fas fa-file-alt'"
+								[label]="'Seleccione el Tipo'" [arrayFiltrado]="aTipo" [sFiltroenArray]="'fuente'"
+								[bMultipleSeleccion]="false"></autocompletar>
+
+						</div>
+					</div>
+				</div>
+
+
+
+
+			</div>
+
+
+
+		</div>
+
+		<div class="col-10 p-0 m-0">
+			<div class="row no-gutters">
+
+				<div class="col-6 contenedor_tarjeta">
+
+					<div class="tarjeta bg-transparente w-100">
+						<h6 class="text-card arthur p-2 gris_texto_titulos borde_gris_b d-block w-100 m-0 bg-white">
+							Emoción predominante y Agentes
+						</h6>
+						<div class="row no-gutters  mr-2 w-100 bg-white">
+
+							<div class="col-9  d-flex justify-content-center ">
+
+								<div class="d-flex justify-content-center align-items-center flex-row progress-bar progress-bar-striped font-weight-bold barra_sentimiento  d-inline-block positivo overflow-hidden"
+									[ngStyle]="{ 'width': (oVistaGeneral.oPuntaje[0]['Nivel de Positivismo'])+'%'}">
+									{{oVistaGeneral.oPuntaje[0]['Nivel de Positivismo'].toFixed(1)+'%'}} <i
+										class="ml-1 fas fa-thumbs-up text-white"></i>
+								</div>
+								<div class="d-flex justify-content-center align-items-center flex-row progress-bar progress-bar-striped  font-weight-bold barra_sentimiento  d-inline-block neutro overflow-hidden"
+									[ngStyle]="{ 'width':  (oVistaGeneral.oPuntaje[0]['Nivel Neutral'])+'%'}">
+									{{oVistaGeneral.oPuntaje[0]['Nivel Neutral'].toFixed(1)+'%'}} <i
+										class="ml-1 fa fa-balance-scale text-white"></i>
+								</div>
+								<div class="d-flex justify-content-center align-items-center flex-row progress-bar progress-bar-striped   font-weight-bold barra_sentimiento  d-inline-block negativo overflow-hidden"
+									[ngStyle]="{ 'width':  (oVistaGeneral.oPuntaje[0]['Nivel de Negativismo'])+'%'}">
+									{{oVistaGeneral.oPuntaje[0]['Nivel de Negativismo'].toFixed(1)+'%'}} <i
+										class="ml-1 fas fa-thumbs-down text-white"></i>
+								</div>
+
+							</div>
+							<div class="col-3 d-flex flex-center">
+
+								<img [src]="oEmocionPrincipal[oVistaGeneral.oPuntaje[0]['Emocion predominante']]?.imagen"
+									class="image_resumen_emocion animated jello slower  d-inline sombra ml-2">
+								<p class="m-0 p-0 ml-1 font-weight-bold nunito d-inline">
+									{{oEmocionPrincipal[oVistaGeneral.oPuntaje[0]['Emocion predominante']]?.texto}}
+								</p>
+
+
+
+
+							</div>
+
+						</div>
+
+						<div class="w-100 flex-wrap d-flex align-items-around justify-content-evenly overflow-y-auto" style="height: 87%;    max-height: 81%;"
+							id="agentes" >
+
+							<div class="indicador_agente card " *ngFor="let agente of oVistaGeneral.aAgentesIndicadores;let i=index;">
+								<div class="d-flex flex-row w-100">
+										<div class="flex-center flex-grow-1 borde_gris_r" >
+											<p class="nunito m-0 font-weight-bold flex-center">
+													{{agente.indicador}}
+											</p>
+										</div>
+										<div class="m-2 flex-center font-weight-bold gris_texto_titulos cifra_indicador">
+											 <ng2-odometer [value]="0" [number]="agente.total" [config]="{ }" style="width: 34px !important;"></ng2-odometer>%
+										</div>
+								</div>
+								<div class="d-flex flex-center mt-1 ">
+										<i *ngFor="let item of [1,2,3,4,5]; let index_estrella=index;" class="fas fa-star" [ngStyle]="{ 'color' : agente.estrellas>index_estrella?'#FBD869':'#747373'} "></i>
+
+								</div>
+
+							</div>
+	
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-6 contenedor_tarjeta">
+
+						<div class="tarjeta card w-100">
+							<h6 class="text-card arthur p-2 gris_texto_titulos borde_gris_b d-block w-100 m-0">
+								Distribución de Categorías
+							</h6>
+
+							<div class="h-100 w-100" id="contenedor_categorias_general">
+									<i class="fas fa-redo animated fadeIn restaurarNodos position-absolute pointer" (click)="fn_restorDendrogramaGeneral();" title="Restaurar"></i>
+
+									<svg id="categorias_general">
+									</svg>
+							</div>
+						</div>
+					</div>
+
+
+				<div class="col-6 contenedor_tarjeta">
+
+					<div class="tarjeta card w-100">
+						<h6 class="text-card arthur p-2 gris_texto_titulos borde_gris_b d-block w-100 m-0">
+							Distribución de Emociones
+						</h6>
+						<div class="h-100 w-100" id="pie">
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-6 contenedor_tarjeta">
+
+					<div class="tarjeta card w-100">
+						<h6 class="text-card arthur p-2 gris_texto_titulos borde_gris_b d-block w-100 m-0">
+							Distribución de Sentimiento
+						</h6>
+						<div class="h-100 w-100" id="mapa_caldas">
+
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+
+		</div>
+	</div>
+</div>
+<!--  
+
+
+				<h6 class="text-card arthur p-2 gris_texto_titulos borde_gris_b mt-2 d-block w-100">
+									Consolidado y Emoción Predominante
+							</h6>
+						<div class="col-12 d-flex " >
+							
+							<div class="row no-gutters  mr-2 w-100" >
+
+								<div class="col-9  d-flex justify-content-center ">
+								
+									<div class="d-flex justify-content-center align-items-center flex-row progress-bar progress-bar-striped font-weight-bold barra_sentimiento  d-inline-block positivo overflow-hidden"
+										[ngStyle]="{ 'width': (aConversacion?.Puntaje[0]['Nivel de Positivismo'])+'%'}">
+										{{aConversacion?.Puntaje[0]['Nivel de Positivismo'].toFixed(1)+'%'}} <i class="ml-1 fas fa-thumbs-up text-white"></i>
+									</div> 
+									<div class="d-flex justify-content-center align-items-center flex-row progress-bar progress-bar-striped  font-weight-bold barra_sentimiento  d-inline-block neutro overflow-hidden"
+										[ngStyle]="{ 'width':  (aConversacion?.Puntaje[0]['Nivel Neutral'])+'%'}">
+										{{aConversacion?.Puntaje[0]['Nivel Neutral'].toFixed(1)+'%'}} <i class="ml-1 fa fa-balance-scale text-white"></i>
+									</div>
+									<div class="d-flex justify-content-center align-items-center flex-row progress-bar progress-bar-striped   font-weight-bold barra_sentimiento  d-inline-block negativo overflow-hidden"
+										[ngStyle]="{ 'width':  (aConversacion?.Puntaje[0]['Nivel de Negativismo'])+'%'}">
+										{{aConversacion?.Puntaje[0]['Nivel de Negativismo'].toFixed(1)+'%'}} <i class="ml-1 fas fa-thumbs-down text-white"></i>
+									</div>
+
+								</div>
+								<div class="col-3 d-flex flex-center">
+
+													<img [src]="oEmocionPrincipal[aConversacion?.Puntaje[0]['Emocion predominante']]?.imagen"
+													class="image_resumen_emocion animated jello slower  d-inline sombra ml-2">
+													<p class="m-0 p-0 ml-1 font-weight-bold nunito d-inline">
+															{{oEmocionPrincipal[aConversacion?.Puntaje[0]['Emocion predominante']]?.texto}}
+												</p>
+
+		
+		
+
+								</div>
+
+							</div>
+
+
+-->

@@ -1,0 +1,751 @@
+<div #swiperWrapper class="swiper-container" [swiper]="config" (indexChange)="onIndexChange($event)"
+	(swiperTransitionStart)="onSwiperEvent('transitionStart')" (swiperTransitionEnd)="onSwiperEvent('transitionEnd')">
+	<div class="swiper-wrapper m-0 p-0">
+		<div class="swiper-slide">
+			<div [ngClass]="bTitulos?'d-none':'d-block'"
+				class="position-absolute titulo_seccion animated slideOutRight  nunito slower  delay-3s"
+				style="z-index: 99999;">
+				Vista General
+
+			</div>
+			<div class="h-100vh prueba m-0 p-0">
+
+				<div class="row no-gutters">
+					<div class="col-2 p-0 m-0">
+
+						<div class="menu_general card">
+							<!-- filtro fecha-->
+							<div class="h-100">
+								<!-- d-flex flex-column justify-content-evenly -->
+								<img src="./assets/img/datalab.png" class="logo">
+
+
+								<h5 class="mb-0 p-0 nunito mt-2 text-center"><i class="mr-1 fas fa-filter"></i>Filtros
+								</h5>
+								<hr class="mb-2 p-0 mt-0">
+								<div style="margin-bottom:40px;">
+
+									<div class="d-flex justify-content-center flex-row my-2">
+										<div class="d-flex">
+											<div class="form-group  icon-addon addon mx-2 my-0 py-0">
+												<label for="fecha" class="mx-2 my-0 p-0 label_inputs">
+													Ingrese la Fecha</label>
+												<input type="text" id="fecha" placeholder="Ingrese Fecha"
+													[(ngModel)]="fecha" (focus)="showCalendar=true;"
+													class="form-control mr-2">
+												<i class="icono fa fa-calendar"></i>
+												<ngb-datepicker #dp
+													[ngStyle]="{ 'display': showCalendar?'block':'none' }"
+													[footerTemplate]="footerTemplate" class="posicion_calendario"
+													(select)="onDateSelection($event)" [displayMonths]="2"
+													[dayTemplate]="t" outsideDays="hidden">
+												</ngb-datepicker>
+												<ng-template #t let-date let-focused="focused">
+													<span class="custom-day" [class.focused]="focused"
+														[class.range]="isRange(date)"
+														[class.faded]="isHovered(date) || isInside(date)"
+														(mouseenter)="hoveredDate = date"
+														(mouseleave)="hoveredDate = null">
+														{{ date.day }}
+													</span>
+												</ng-template>
+												<ng-template #footerTemplate>
+													<hr class="my-0">
+													<button class="btn btn-secondary btn-sm m-2 float-right"
+														(click)="showCalendar=false;">Cerrar</button>
+												</ng-template>
+											</div>
+										</div>
+									</div>
+									<div class="my-2">
+										<autocompletar [icon]="'fas fa-map-marker-alt'"
+											[label]="'Seleccione el Municipio'" [arrayFiltrado]="aMunicipios"
+											[sFiltroenArray]="'nombre'" [bMultipleSeleccion]="true">
+										</autocompletar>
+										<!-- (eEnviarDatosPadre)="fn_recibirDropdow($event)"-->
+									</div>
+									<div class="my-2">
+										<autocompletar [icon]="'fas fa-user'" [label]="'Seleccione el Agente'"
+											[arrayFiltrado]="aAgentes" [sFiltroenArray]="'nombre'"
+											[bMultipleSeleccion]="false"></autocompletar>
+										<!-- (eEnviarDatosPadre)="fn_recibirDropdow($event)"-->
+
+									</div>
+									<div class="my-2">
+										<autocompletar [icon]="'fas fa-file-alt'" [label]="'Seleccione el Tipo'"
+											[arrayFiltrado]="aTipo" [sFiltroenArray]="'fuente'"
+											[bMultipleSeleccion]="false"></autocompletar>
+										<!-- (eEnviarDatosPadre)="fn_recibirDropdow($event)"-->
+
+									</div>
+								</div>
+							</div>
+
+
+
+
+						</div>
+
+
+
+					</div>
+
+					<div class="col-10 p-0 m-0">
+						<div class="row no-gutters">
+
+							<div class="col-6 contenedor_tarjeta">
+
+								<div class="tarjeta bg-transparente w-100">
+									<h6
+										class="text-card arthur p-2 gris_texto_titulos borde_gris_b d-block w-100 m-0 bg-white">
+										Indicadores de Agentes
+									</h6>
+
+
+									<div class="w-100 flex-wrap d-flex align-items-around justify-content-evenly overflow-y-auto"
+										style="height: 87%;    max-height: 81%;" id="agentes">
+										<div class="indicador_agente card overflow-x-hidden"
+											*ngFor="let agente of oVistaGeneral?.aAgentesIndicadores;let i=index;">
+											<div class="d-flex flex-row w-100  ">
+
+												<i class="fas fa-question-circle gris_texto_titulos  indicador_agentes" ></i>
+												<div class="texto_transicion_agente position-absolute d-flex ">
+													<div class="flex-grow-1 pr-1">
+															{{agente.descripcion}}
+													</div>
+													<div class="flex-center">
+														<i class="fa fa-quote-right fa-2x" ></i>
+													</div>
+												</div>
+												<div class="transicion_rating_agente d-flex w-100">
+													<div class="flex-center flex-grow-1 borde_gris_r">
+															<p class="nunito m-0 font-weight-bold flex-center">
+																{{agente.indicador}}
+															</p>
+														</div>
+														<div
+															class="m-2 flex-center font-weight-bold gris_texto_titulos cifra_indicador">
+															<ng2-odometer [value]="0" [number]="agente.total" [config]="{ }"
+																style="width: 34px !important;"></ng2-odometer>%
+														</div>
+												</div>
+
+											</div>
+											<div class="d-flex flex-center mt-1 ">
+												<i *ngFor="let item of [1,2,3,4,5]; let index_estrella=index;"
+													class="fas fa-star"
+													[ngStyle]="{ 'color' : agente.estrellas>index_estrella?'#FBD869':'#747373'} "></i>
+
+											</div>
+
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 contenedor_tarjeta" id="distribucion_categorias_fs">
+
+								<div class="tarjeta card w-100">
+									<i class="fas fa-compress position-absolute pointer" (click)="fn_fullScreenGeneral('distribucion_categorias_fs')" style="right: 5px; top:8px;" title="Pantalla Completa"></i>
+									<h6 class="text-card arthur p-2 gris_texto_titulos borde_gris_b d-block w-100 m-0">
+										Distribución de Categorías
+									</h6>
+									<div class="h-100 w-100" id="contenedor_categorias_general">
+										<i class="fas fa-redo animated fadeIn restaurarNodos position-absolute pointer"
+											(click)="fn_restorDendrogramaGeneral();" title="Restaurar"></i>
+
+										<svg id="categorias_general">
+										</svg>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="col-6 contenedor_tarjeta">
+
+								<div class="tarjeta card w-100">
+									<h6 class="text-card arthur p-2 gris_texto_titulos borde_gris_b d-block w-100 m-0">
+										Distribución de Emociones
+									</h6>
+									<div class="row no-gutters  mr-2 w-100 bg-white">
+										<ng-container *ngIf="oVistaGeneral">
+											<div class="col-9  d-flex justify-content-center ">
+
+												<div class="d-flex justify-content-center align-items-center flex-row progress-bar progress-bar-striped font-weight-bold barra_sentimiento  d-inline-block positivo overflow-hidden"
+													[ngStyle]="{ 'width': (oVistaGeneral?.oPuntaje[0]['Nivel de Positivismo'])+'%'}">
+													{{oVistaGeneral.oPuntaje[0]['Nivel de Positivismo'].toFixed(1)+'%'}}
+													<i class="ml-1 fas fa-thumbs-up text-white"></i>
+												</div>
+												<div class="d-flex justify-content-center align-items-center flex-row progress-bar progress-bar-striped  font-weight-bold barra_sentimiento  d-inline-block neutro overflow-hidden"
+													[ngStyle]="{ 'width':  (oVistaGeneral?.oPuntaje[0]['Nivel Neutral'])+'%'}">
+													{{oVistaGeneral.oPuntaje[0]['Nivel Neutral'].toFixed(1)+'%'}} <i
+														class="ml-1 fa fa-balance-scale text-white"></i>
+												</div>
+												<div class="d-flex justify-content-center align-items-center flex-row progress-bar progress-bar-striped   font-weight-bold barra_sentimiento  d-inline-block negativo overflow-hidden"
+													[ngStyle]="{ 'width':  (oVistaGeneral?.oPuntaje[0]['Nivel de Negativismo'])+'%'}">
+													{{oVistaGeneral.oPuntaje[0]['Nivel de Negativismo'].toFixed(1)+'%'}}
+													<i class="ml-1 fas fa-thumbs-down text-white"></i>
+												</div>
+
+											</div>
+											<div class="col-3 d-flex flex-center">
+
+												<img [src]="oEmocionPrincipal[oVistaGeneral?.oPuntaje[0]['Emocion predominante']]?.imagen"
+													class="image_resumen_emocion animated jello slower  d-inline sombra ml-2">
+												<p class="m-0 p-0 ml-1 font-weight-bold nunito d-inline">
+													{{oEmocionPrincipal[oVistaGeneral?.oPuntaje[0]['Emocion predominante']]?.texto}}
+												</p>
+
+
+
+
+											</div>
+										</ng-container>
+
+
+									</div>
+
+									<div class="h-100 w-100" id="contenedor_pie">
+										<div id="pie" style="max-height: initial;">
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 contenedor_tarjeta">
+
+								<div class="tarjeta card w-100">
+									<h6 class="text-card arthur p-2 gris_texto_titulos borde_gris_b d-block w-100 m-0">
+										Distribución de Sentimiento
+									</h6>
+									<div class="h-100 w-100 position-relative" id="mapa_caldas"> 
+										<div class="legend_map d-flex flex-column bg-white">
+											<div class="d-flex flex-row mx-1"
+								>
+
+												<div class="cuadro_legend_map m-auto municipio_cuadro positivo pointer" (click)="fn_highlightMun('positivo')">
+
+												</div>
+												<div class="texto_legend_map text-center positivo"
+													style="background:none !important;background:none !important;"  >
+													Positivo
+												</div>
+											</div>
+
+											<div class="d-flex flex-row mx-1">
+												<div class="cuadro_legend_map m-auto municipio_cuadro neutro pointer" (click)="fn_highlightMun('neutro')">
+
+												</div>
+												<div class="texto_legend_map text-center neutro" style="background:none !important">
+													Neutro
+												</div>
+											</div>
+
+
+											<div class="d-flex flex-row mx-1">
+												<div class="cuadro_legend_map m-auto municipio_cuadro negativo pointer" (click)="fn_highlightMun('negativo')">
+
+												</div>
+												<div class="texto_legend_map text-center negativo" style="background:none !important"> 
+													Negativa
+												</div>
+											</div>
+											<div class="d-flex flex-row mx-1">
+												<div class="cuadro_legend_map municipio_cuadro m-auto sin_valor pointer"
+													style="border:1px solid black;"  (click)="fn_highlightMun('sin_valor')"> 
+
+												</div>
+												<div class="texto_legend_map text-center sin_valor" style="background:none !important">
+													No registra
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!--  
+					
+					
+									<h6 class="text-card arthur p-2 gris_texto_titulos borde_gris_b mt-2 d-block w-100">
+														Consolidado y Emoción Predominante
+												</h6>
+											<div class="col-12 d-flex " >
+												
+												<div class="row no-gutters  mr-2 w-100" >
+					
+													<div class="col-9  d-flex justify-content-center ">
+													
+														<div class="d-flex justify-content-center align-items-center flex-row progress-bar progress-bar-striped font-weight-bold barra_sentimiento  d-inline-block positivo overflow-hidden"
+															[ngStyle]="{ 'width': (aConversacion?.Puntaje[0]['Nivel de Positivismo'])+'%'}">
+															{{aConversacion?.Puntaje[0]['Nivel de Positivismo'].toFixed(1)+'%'}} <i class="ml-1 fas fa-thumbs-up text-white"></i>
+														</div> 
+														<div class="d-flex justify-content-center align-items-center flex-row progress-bar progress-bar-striped  font-weight-bold barra_sentimiento  d-inline-block neutro overflow-hidden"
+															[ngStyle]="{ 'width':  (aConversacion?.Puntaje[0]['Nivel Neutral'])+'%'}">
+															{{aConversacion?.Puntaje[0]['Nivel Neutral'].toFixed(1)+'%'}} <i class="ml-1 fa fa-balance-scale text-white"></i>
+														</div>
+														<div class="d-flex justify-content-center align-items-center flex-row progress-bar progress-bar-striped   font-weight-bold barra_sentimiento  d-inline-block negativo overflow-hidden"
+															[ngStyle]="{ 'width':  (aConversacion?.Puntaje[0]['Nivel de Negativismo'])+'%'}">
+															{{aConversacion?.Puntaje[0]['Nivel de Negativismo'].toFixed(1)+'%'}} <i class="ml-1 fas fa-thumbs-down text-white"></i>
+														</div>
+					
+													</div>
+													<div class="col-3 d-flex flex-center">
+					
+																		<img [src]="oEmocionPrincipal[aConversacion?.Puntaje[0]['Emocion predominante']]?.imagen"
+																		class="image_resumen_emocion animated jello slower  d-inline sombra ml-2">
+																		<p class="m-0 p-0 ml-1 font-weight-bold nunito d-inline">
+																				{{oEmocionPrincipal[aConversacion?.Puntaje[0]['Emocion predominante']]?.texto}}
+																	</p>
+					
+							
+							
+					
+													</div>
+					
+												</div>
+					
+					
+					-->
+
+
+		</div>
+		<div class="swiper-slide">
+			<div [ngClass]="bTitulos?'d-none':'d-block'"
+				class="position-absolute titulo_seccion animated slideOutRight  nunito slower  delay-3s"
+				style="z-index: 99999;">
+				Vista Individual
+
+			</div>
+
+			<div class="btn-group btn-group-toggle position-absolute" data-toggle="buttons"
+				style="top:9px;right:9px;z-index: 9;">
+
+				<div class="d-flex">
+					<div class="flex-center">
+						<i class="far fa-comment-dots fa-2x mr-2"></i>
+
+					</div>
+					<div class="flex-grow-1">
+						<select class="form-control form-control-sm" [(ngModel)]="dropdownChat"
+							(change)="fn_getConversacion(dropdownChat)">
+							<option value="0">Chat 1</option>
+							<option value="1">Chat 2</option>
+							<option value="2">Chat 3</option>
+							<option value="3">LLamada 1</option>
+							<option value="4">LLamada 2</option>
+
+						</select>
+					</div>
+				</div>
+
+				<!---<label class="btn btn-secondary  pointer" [ngClass]="radio_chat=='chat1'?'active':''" >
+									<i class="far fa-comment-dots mr-2"></i>
+							  <input type="radio" name="options" id="option1" [(ngModel)]="radio_chat" value="chat1" autocomplete="off" checked (change)="fn_getConversacion(0)"> Chat 1
+							</label>
+							<label class="btn btn-secondary  pointer"  [ngClass]="radio_chat=='chat2'?'active':''">
+									<i class="far fa-comment-dots mr-2"></i>
+							  <input type="radio" name="options" id="option2" [(ngModel)]="radio_chat" value="chat2" autocomplete="off" (change)="fn_getConversacion(1)"> Chat 2
+							</label>
+							<label class="btn btn-secondary  pointer"  [ngClass]="radio_chat=='chat3'?'active':''">
+									<i class="far fa-comment-dots mr-2"></i>
+							  <input type="radio" name="options" id="option3" [(ngModel)]="radio_chat" value="chat3" autocomplete="off" (change)="fn_getConversacion(2)"> Chat 3
+							</label>-->
+			</div>
+
+			<div class="content-container">
+				<!--<div class="position-fixed posicion_flecha animated fadeIn delay-1s" [ngClass]="bInstruccionInicial?'d-none':''">
+							<img src="./assets/img/arrows.gif" class="instruccion_flecha animated fadeOut slower  delay-5s">
+						</div>
+						<div class="position-fixed posicion_click animated fadeIn delay-1s" [ngClass]="bInstruccionInicial?'d-none':''">
+							<img src="./assets/img/click.gif" class="instruccion_click animated fadeOut slower  delay-5s">
+						</div>-->
+
+				<!--<img  src="./assets/img/arrows.gif"  class="position-fixed instruccion_flecha animated slideOutDown slower  delay-3s">-->
+
+
+
+
+
+
+				<!--<div [ngClass]="bTitulos?'d-none':'d-block'"
+							class="position-absolute titulo_seccion animated slideOutRight  nunito slower  delay-3s">
+							Dendograma Emoción a Palabra
+						</div>-->
+				<div class="check_categorias position-absolute" style="z-index: 1;">
+
+					<!--<label class="custom-control custom-checkbox">
+												<input type="checkbox" id="checkbox" class="custom-control-input" [(ngModel)]="marcarCaracterizacion" (change)="fn_changeMararCaracterizacion()">
+												<span class="custom-control-label">Marcar / Seleccionar Todas</span>
+										</label>-->
+
+					<!--<label class="btn btn-primary">
+											<i class="fas fa-check"></i> 
+											<input type="checkbox" autocomplete="off" class="d-none">
+									</label>			-->
+
+
+				</div>
+				<div id="app" class="app m-auto sombra " style="border-radius: 6px;">
+
+
+					<div id="app-inner" class="app-inner h-100 position-relative">
+						<!--	<i [hidden]="aConversacion?.Chat.length<4"
+									class="fas fa-angle-double-down fa-4x  animated infinite fadeInDown slower  texto-gris-flecha posicion_flecha_down"></i>
+							-->
+						<div id="row_scroll" class="row flex-center no-gutters h-100">
+							<div class="col-12 col-md-6 inherit ">
+								<div class="row no-gutters">
+									<div class="col-12">
+										<div id="container_chat"
+											class="container_chat position-relative card sombra  m-2 overflow-y-auto  overflow-x-hidden"
+											style="height: 69vh !important;">
+
+											<h6 class="text-card arthur p-2 gris_texto_titulos borde_gris_b">
+												Chat
+											</h6>
+											<!--<video [hidden]="dropdownChat!='3' && dropdownChat!='4'" controls="" autoplay="false" name="media"><source src="./assets/sound/llamada1.wav" type="audio/wav"></video>-->
+
+											<div class="d-flex m-2" *ngFor="let chat of aConversacion?.Chat"
+												[ngClass]="{ 'flex-row-reverse':chat.emisor=='cliente'}">
+												<div class="container_image_agent">
+													<img [src]="chat.emisor=='agente'?'./assets/img/call.png':'./assets/img/user3.jpg'"
+														width="48" height="48" class="rounded-circle  pt-0 mt-0 mx-3">
+												</div>
+												<div>
+													<div [ngClass]="{'esquina_chat_izq':chat.emisor!='cliente', 'esquina_chat_der':chat.emisor=='cliente', 'bg_cliente':chat.emisor=='cliente','bg_emisor':chat.emisor!='cliente' }"
+														class="chat-body esquina_chat rounded  white p-2 mx-2 position-relative sombra ">
+														<div class="header">
+															<strong
+																class="primary-font nunito">{{chat.emisor=='agente'?'Agente':'Cliente'}}</strong>
+														</div>
+														<hr class="w-100 m-1">
+														<div class="mb-0">
+
+															<ng-container *ngFor="let palabra of chat.aPalabras"
+																class="d-inline-block text-justify">
+																<!-- sentimiento solo esta para positivos y negativs-->
+																<span *ngIf="palabra.detallePalabra"
+																	[ngClass]="!palabra.detallePalabra.Entidad && !palabra.detallePalabra.Tipo && !palabra.detallePalabra.sentimiento && !palabra.detallePalabra.tipo2?'no_badge':'badge'"
+																	[class]="'badge_palabras '+ ' '+ fn_quitarAcentos(palabra.detallePalabra?.subCategoria)+' '+ fn_quitarAcentos(palabra.detallePalabra?.Entidad) +  ' '+palabra.detallePalabra.Tipo +' '+palabra.detallePalabra['Sub Emocion']+ ' '+palabra.detallePalabra.sentimiento + ' '+palabra.detallePalabra.Palabra+ ' '+ ' '+palabra.detallePalabra.tipo2+ ' '+palabra.frase">
+
+																	<i *ngIf="palabra.detallePalabra.Contexto"
+																		[title]="'Contexto '+ palabra.detallePalabra.Contexto"
+																		class="fas fa-sync-alt"
+																		[ngClass]="palabra.detallePalabra.Contexto=='Negativo'?'color_negativo':'color_positivo'"></i>
+																	{{palabra.palabra + '&nbsp;'}}
+																	<i *ngIf="palabra.detallePalabra.sentimiento"
+																		[title]="palabra.detallePalabra.sentimiento"
+																		[ngClass]="palabra.detallePalabra.sentimiento=='negativo'?'fas fa-minus-square':'fas fa-plus-square'"></i>
+
+
+																</span>
+
+																<span
+																	*ngIf="!palabra.detallePalabra && palabra.palabra!=undefined"
+																	[class]="palabra.frase">
+																	{{palabra.palabra + '&nbsp;'}}
+																</span>
+
+																<!---<div *ngIf="palabra_clave.Palabra==palabra" [class]="'badge badge'+' '+palabra.Entidad+ ' '+palabra.Tipo">
+																									pc{{palabra_clave.Palabra}}
+																								</div>-->
+
+
+															</ng-container>
+
+
+
+
+
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12  align-items-center" style="height: 27vh;">
+										<div
+											class="legend_label h-100  flex-column card sombra  mx-2 mb-2 d-flex position-initial">
+											<div class="centrado-x-absoluto">
+												<label class="switchBtn d-block m-auto" style="z-index: 1;">
+													<input type="checkbox" id="mostrar"
+														[(ngModel)]="marcarCaracterizacion"
+														(change)="fn_changeMararCaracterizacion()">
+													<div class="slide round d-flex align-items-center">Mostrar</div>
+												</label>
+											</div>
+
+											<div class="h-100 ">
+												<ng-container *ngFor="let item of oClasesCategorias | pipekeys">
+
+													<span class="ml-2 card-text d-block font-weight-bold mx-1"
+														*ngIf="oClasesCategorias[item.key].index_tipo && oClasesCategorias[item.key].tipo=='sentimiento'">
+														Sentimiento
+													</span>
+													<span class="ml-2 card-text d-block font-weight-bold mx-1"
+														*ngIf="oClasesCategorias[item.key].index_tipo && oClasesCategorias[item.key].tipo=='tipo_entidad'">
+														Tipo de Entidad
+													</span>
+													<span class="ml-2 card-text d-block font-weight-bold mx-1"
+														*ngIf="oClasesCategorias[item.key].index_tipo && oClasesCategorias[item.key].tipo=='categoria'">
+														Categorías
+													</span>
+													<!--<div class="d-flex flex-wrap flex-column justify-content-around align-items-center mt-1" >-->
+													<div [class]="'mx-2 pointer titulos_categoria badge'+ ' '+oClasesCategorias[item.key].clase"
+														style="z-index: 1;" (click)="fn_AddRemoveCategoria(item.key)">
+														<i [class]="'mr-1'+' '+oClasesCategorias[item.key].icono"></i>
+														{{oClasesCategorias[item.key].nombre}}
+													</div>
+													<!--</div>-->
+
+												</ng-container>
+
+
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+
+
+
+							</div>
+							<div class="col-12 col-md-6 h-100 inherit ">
+
+								<div class="row no-gutters  ">
+									<h6 class="text-card arthur p-2 gris_texto_titulos borde_gris_b mt-2 d-block w-100">
+										Consolidado y Emoción Predominante
+									</h6>
+									<div class="col-12 d-flex ">
+
+										<div class="row no-gutters  mr-2 w-100">
+
+											<div class="col-9  d-flex justify-content-center ">
+
+												<div class="d-flex justify-content-center align-items-center flex-row progress-bar progress-bar-striped font-weight-bold barra_sentimiento  d-inline-block positivo overflow-hidden"
+													[ngStyle]="{ 'width': (aConversacion?.Puntaje[0]['Nivel de Positivismo'])+'%'}">
+													{{aConversacion?.Puntaje[0]['Nivel de Positivismo'].toFixed(1)+'%'}}
+													<i class="ml-1 fas fa-thumbs-up text-white"></i>
+												</div>
+												<div class="d-flex justify-content-center align-items-center flex-row progress-bar progress-bar-striped  font-weight-bold barra_sentimiento  d-inline-block neutro overflow-hidden"
+													[ngStyle]="{ 'width':  (aConversacion?.Puntaje[0]['Nivel Neutral'])+'%'}">
+													{{aConversacion?.Puntaje[0]['Nivel Neutral'].toFixed(1)+'%'}} <i
+														class="ml-1 fa fa-balance-scale text-white"></i>
+												</div>
+												<div class="d-flex justify-content-center align-items-center flex-row progress-bar progress-bar-striped   font-weight-bold barra_sentimiento  d-inline-block negativo overflow-hidden"
+													[ngStyle]="{ 'width':  (aConversacion?.Puntaje[0]['Nivel de Negativismo'])+'%'}">
+													{{aConversacion?.Puntaje[0]['Nivel de Negativismo'].toFixed(1)+'%'}}
+													<i class="ml-1 fas fa-thumbs-down text-white"></i>
+												</div>
+
+											</div>
+											<div class="col-3 d-flex flex-center">
+
+												<img [src]="oEmocionPrincipal[aConversacion?.Puntaje[0]['Emocion predominante']]?.imagen"
+													class="image_resumen_emocion animated jello slower  d-inline sombra ml-2">
+												<p class="m-0 p-0 ml-1 font-weight-bold nunito d-inline">
+													{{oEmocionPrincipal[aConversacion?.Puntaje[0]['Emocion predominante']]?.texto}}
+												</p>
+
+
+
+
+											</div>
+
+										</div>
+
+
+
+
+
+									</div>
+
+									<div class="col-12">
+
+										<div class="card sombra  mt-2 ">
+											<h6
+												class="text-card arthur p-2 gris_texto_titulos borde_gris_b mt-2  w-100">
+												Relación de Entidades y Subcategorías
+												<!----<i *ngIf="oIndexOcurrencia.limite>1" class="fas fa-chevron-right float-right pointer" (click)="fn_nextOcurrencia()"></i>-->
+											</h6>
+											<div *ngIf="oIndexOcurrencia.limite>1"
+												class="btn btn-secondary  pointer position-absolute button_iteracion animated fadeIn"
+												(click)="fn_nextOcurrencia()"> Siguiente Iteración<i
+													class="fa fa-arrow-right ml-2"></i></div>
+											<i class="fas fa-redo animated fadeIn restaurarNodos position-absolute pointer"
+												(click)="restablecer_node();fn_restablecerOpacityNode();fn_MarcarCategoriasSeleccionadas();"
+												title="Restaurar"></i>
+
+
+											<div id="contenedor_dendrograma" style="height: 45vh !important;">
+
+
+												<svg id="grafica_emocion">
+												</svg>
+											</div>
+
+										</div>
+
+									</div>
+
+
+									<div class="col-12  position-relative overflow-x-hidden  h-100 w-100">
+
+										<div
+											class="typewriter overflow-y-auto h-100 w-100 card sombra  mt-2 contenedor_frases">
+											<h6 class="text-card arthur p-2 gris_texto_titulos borde_gris_b">
+												Frases Relevantes Negativas
+											</h6>
+											<h6 class="ml-2 text-card arthur gris_texto_titulos"
+												*ngIf="aFrase.length==0">
+												Este análisis no cuenta con frases negativas.
+											</h6>
+
+											<!-- *ngFor="let item of aFrase"-->
+											<div class="d-flex ml-2" *ngFor="let item of aFrase; let idx=index;"
+												(mouseover)="fn_hightlightFrase(idx)"
+												(mouseout)="fn_removehightlightFrase(idx)">
+												<i class="far fa-comment mr-2 mt-1"></i>
+												<div class="typewriter-text">{{item}}</div>
+											</div>
+										</div>
+
+										<!---<div class="row justify-content-around">
+													<div class="col-4" *ngFor="let item of aResumenDetallado | pipekeys">
+														<div class="d-flex justify-content-between">
+															<p class="text-center font-weight-500 flex-grow-1 titulo_tabla">
+																{{item.value.nombre}}
+															</p>
+															<div>
+																<span class="badge neutro">{{item.value.ocurrencias}}</span>
+															</div>
+														</div>
+					
+														<table class="table table-hover">
+					
+															<tr *ngFor="let res of item.value.palabras">
+																<td>
+																	{{res.Palabra}}
+																</td>
+																<td>
+																	{{res.ocurrencias}}
+																</td>
+															</tr>
+														</table>
+					
+													</div>
+												</div>-->
+
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+
+						<!---<div class="legend_label position-absolute">
+									<label class="switchBtn" style="z-index: 1;">
+										<input type="checkbox" [(ngModel)]="marcarCaracterizacion"
+											(change)="fn_changeMararCaracterizacion()">
+										<div class="slide round d-flex align-items-center">Mostrar</div>
+									</label>
+									<div class="d-flex flex-column">
+										<div *ngFor="let item of oClasesCategorias | pipekeys"
+											[class]="'pointer my-1 titulos_categoria badge'+ ' '+oClasesCategorias[item.key].clase"
+											style="z-index: 1;" (click)="fn_AddRemoveCategoria(item.key)">
+											<i [class]="'mr-1'+' '+oClasesCategorias[item.key].icono"></i>
+											{{oClasesCategorias[item.key].nombre}}
+					
+										</div>
+					
+									</div>
+					
+								</div>-->
+
+					</div>
+				</div>
+
+
+
+
+
+
+				<!---<svg id="grafica_emocion" >
+									
+									
+									</svg>-->
+				<!---
+								<div [ngClass]="bTitulos?'d-none':'d-block'" class="position-absolute titulo_seccion animated slideOutRight nunito slower  delay-3s">
+									Porcentaje de Sentimiento
+								</div>
+								<div class="centrado-x-absoluto w-100 mt-1" [ngClass]="bDisplay?'d-none':'d-block'">
+										<img [src]="oEmocionPrincipal[aConversacion?.Puntaje[0]['Emocion predominante']]?.imagen"  class="image_resumen_emocion animated jello slower m-auto d-block sombra" >
+										<p class="text-center font-weight-bold text-white nunito texto_resumen_emocion d-flex flex-center animated bounceIn slower">
+											{{oEmocionPrincipal[aConversacion?.Puntaje[0]['Emocion predominante']]?.texto}}
+										</p>
+								</div>
+								<div class="h-100vh positivo overflow-hidden"  [ngStyle]="{ 'width': aConversacion?.Puntaje[0]['Nivel de Positivismo']+'%'}">
+									<div class="h-100  d-flex flex-center">
+											<div class="w-100 text-white font-weight-bold d-flex flex-center h-100 flex-column"   >
+												<div [ngStyle]="{ 'font-size': ((aConversacion?.Puntaje[0]['Nivel de Positivismo']/0.57)+25)+'px' }" >
+														<ng2-odometer fittex  [number]="aConversacion?.Puntaje[0]['Nivel de Positivismo']" [config]="{ }" > </ng2-odometer>%
+												</div>
+												<div>
+													<i [ngClass]="bDisplay?'d-none':'d-block'" class="fas fa-thumbs-up text-white font-weight-bold animated bounceInLeft slower" [ngStyle]="{ 'font-size': ((aConversacion?.Puntaje[0]['Nivel de Positivismo']/0.90)+20)+'px' }"></i>
+												</div>
+											</div>
+									</div>
+								</div>
+								<div class="h-100vh neutro overflow-hidden"  [ngStyle]="{ 'width': aConversacion?.Puntaje[0]['Nivel Neutral']+'%'}">
+										<div class="h-100  d-flex flex-center">
+												<div class="w-100 text-white font-weight-bold d-flex flex-center h-100 flex-column"   >
+													<div [ngStyle]="{ 'font-size': ((aConversacion?.Puntaje[0]['Nivel Neutral']/0.57)+25)+'px' }" >
+															<ng2-odometer fittex  [number]="aConversacion?.Puntaje[0]['Nivel Neutral']" [config]="{ }" > </ng2-odometer>%
+													</div>
+													<div>
+														<i [ngClass]="bDisplay?'d-none':'d-block'" class="fas fa-balance-scale text-white font-weight-bold animated bounceInUp slower" [ngStyle]="{ 'font-size': ((aConversacion?.Puntaje[0]['Nivel Neutral']/0.90)+20)+'px' }"></i>
+													</div>
+												</div>
+										</div>
+									</div>
+									<div class="h-100vh negativo overflow-hidden"  [ngStyle]="{ 'width': aConversacion?.Puntaje[0]['Nivel de Negativismo']+'%'}">
+											<div class="h-100  d-flex flex-center">
+												<div class="w-100 text-white font-weight-bold d-flex flex-center h-100 flex-column"   >
+													<div [ngStyle]="{ 'font-size': ((aConversacion?.Puntaje[0]['Nivel de Negativismo']/0.57)+25)+'px' }" >
+															<ng2-odometer fittex  [number]="aConversacion?.Puntaje[0]['Nivel de Negativismo']" [config]="{ }" > </ng2-odometer>%
+													</div>
+													<div>
+														<i [ngClass]="bDisplay?'d-none':'d-block'" class="fas fa-thumbs-down text-white font-weight-bold animated bounceInRight  slower" [ngStyle]="{ 'font-size': ((aConversacion?.Puntaje[0]['Nivel de Negativismo']/0.90)+20)+'px' }"></i>
+													</div>
+												</div>
+											</div>
+									</div>
+					
+					
+					
+						  <div class="swiper-pagination" ></div>
+					
+								-->
+
+
+			</div>
+
+		</div>
+
+
+
+	</div>
+	<div class="swiper-pagination"></div>
+</div>

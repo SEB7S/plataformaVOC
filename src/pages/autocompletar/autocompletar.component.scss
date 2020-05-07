@@ -1,0 +1,64 @@
+.autocompletar{
+    width: 250px;
+    /* margin-top: 39px; */
+    max-height: 154px;
+    overflow-y: auto;
+    __border: 1px solid #dcdcdc;
+    overflow-x: hidden;
+    position: fixed;
+    background: white;
+    z-index: 1;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+}
+
+.autocompletar .item_autocompletar{
+    height:38px;
+    border-bottom: 1px solid #dcdcdc;
+    display:flex;
+    __justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    cursor:pointer;
+}
+
+.autocompletar .item_autocompletar:hover, .item_autocompletar_seleccion{
+    background:#ececec;
+}
+
+.contenedor_autocompletar{
+    height:136px;
+    
+}
+
+.progreso{ 
+    height: 2px;
+    background:green;
+    margin-left: 3px;
+}
+
+.texto_pequeno_autocompletar{
+    font-size: 13px;
+}
+
+.label_inputs{
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+.container_buttons{
+    margin: 0rem 0px 1rem 0px;;
+    width: 250px;
+    position: fixed !important;
+    z-index: 1;
+}
+.container_buttons > button{
+    background:white;
+}
+button.btn-outline-danger:hover > i{
+    color:red !important;
+}
+
+button.btn-outline-success:hover > i{
+    color:#28a745 !important;
+}

@@ -1,0 +1,313 @@
+[
+    {
+     "oPuntaje": [
+        {
+          "Emocion predominante":"enfado",
+          "Nivel Neutral":25.773195876288657 ,
+          "Nivel de Negativismo":  44.329896907216494,
+          "Nivel de Positivismo": 29.896907216494842
+        }
+      ],
+     
+      "aAgentesIndicadores": [
+        {
+          "estrellas":5,
+          "indicador": "Presentación",
+          "total":50,
+          "descripcion":"Buenos Días/tardes/noches le habla <nombre del asesor> ¿Con quién tengo el gusto?"
+        },
+        {
+         "estrellas":4,
+         "indicador": "Manera de hablar",
+         "total":0.0,
+         "descripcion":"No tutear al cliente ni utilice frases demasiado afectuosas hacia él, ejemplo: mi amor, cariño, gordita, negrita, viejita, entre otras."
+        },
+        {
+         "estrellas":3,
+         "indicador": "Trato con el cliente",
+         "total":0.0,
+         "descripcion":"No descalificar al cliente, evitar utilizar frases como: “usted no tiene la razón”, “eso no es así”, “usted está equivocado”, entre otras."
+        },  
+        {
+         "estrellas":2,
+         "indicador": "Solicitudes",
+         "total":0.0,
+         "descripcion":"Solicitar al cliente que por favor espere si es necesario ausentarse del puesto para gestionar un trámite relacionado con su caso, explicando el motivo por el cual requiere ausentarse y el tiempo aproximado de espera."
+        },  
+        {
+         "estrellas":1,
+         "indicador": "Finalización llamada",
+         "total":0.0,
+         "descripcion":"Finalizar la atención preguntando al cliente si requiere de otro trámite o si desea una aclaración adicional o que le repitan alguna explicación. Ejemplo: ”¿Hay algo más en que le pueda colaborar?”."
+        }
+      ],
+      "aCategoriasGeneral": [
+        {
+          "nombre_categoria": "Facturación",
+          "num_incidencias": 5,  
+          "imagen": "positivo",
+          "subcategoria":[
+              {
+                "subcategoria_nombre": "Autorización Factura",
+                "num_inciddencias":2.0
+              },
+              {
+                "subcategoria_nombre":"Cambio de Factura",
+                "num_incidencias":8.0
+              },
+              {
+                "subcategoria_nombre":"Copia de Factura",
+                "num_incidencias": 30.0
+              },
+              {
+                "subcategoria_nombre":"Financiación de Factura",
+                "num_incidencias":10.0
+              },
+              {
+                "subcategoria_nombre":"Pago de Factura",
+                "num_incidencias":35.0
+              },
+              {
+                "subcategoria_nombre":"Cobros",
+                "num_incidencias":4.0
+              },
+              {
+                "subcategoria_nombre":"Pérdida de Factura",
+                "num_incidencias":6.0
+              },
+              {
+                "subcategoria_nombre":"Reclamo por Factura",
+                "num_incidencias":0.0
+              },
+              {
+                "subcategoria_nombre":"No Llegó Factura",
+                "num_incidencias":3.0
+              },
+              {
+                "subcategoria_nombre":"Factura doble",
+                "num_incidencias":2.0
+              }
+         
+        ]  
+        },
+        {
+          "nombre_categoria":"Atención al cliente",
+          "num_incidencias": 50,  
+          "imagen": "neutro",
+          "subcategoria":
+          [
+            {
+              "subcategoria_nombre":"Información brindada",
+                "num_incidencias":55.0
+            },
+            {
+              "subcategoria_nombre":"Atención por parte del personal",
+                "num_incidencias":15.0
+            },
+            {
+              "subcategoria_nombre":"Demora en la atención",
+                "num_incidencias":10.0
+            },
+            {
+              "subcategoria_nombre":"No resolución de inquietudes",
+                "num_incidencias":8.0
+            },
+            {
+              "subcategoria_nombre":"Esperar para ser atendido",
+                "num_incidencias":12.0
+            },
+            {
+              "subcategoria_nombre":"Falta de explicación",
+                "num_incidencias":0.0
+            },
+            {
+              "subcategoria_nombre":"Sistema caído",
+                "num_incidencias":0.0
+            },
+            {
+              "subcategoria_nombre":"Contactar más tarde",
+              "num_incidencias":0.0
+            }
+          ]
+  
+        },
+        {
+          "nombre_categoria":"Servicio de energía",
+          "num_incidencias": 7,
+          "imagen": "negativo",
+          "subcategoria":
+          [
+            {
+              "subcategoria_nombre":"Reconexiones",
+              "num_incidencias":90.0
+            },
+            {
+              "subcategoria_nombre":"Reclamo por el servicio de energía",
+              "num_incidencias":0.0
+            },
+            {
+              "subcategoria_nombre":"Daños",
+              "num_incidencias":3.0
+            },
+            {
+              "subcategoria_nombre":"Reparaciones",
+              "num_incidencias":1.3
+            },
+            {
+              "subcategoria_nombre":"Contador",
+              "num_incidencias":1.6
+            },
+            {
+              "subcategoria_nombre":"Mantenimiento",
+              "num_incidencias":0.22
+            },
+            {
+              "subcategoria_nombre":"Transformador",
+              "num_incidencias":0.0
+            },
+            {
+              "subcategoria_nombre":"Lineas rotas o chispeando",
+              "num_incidencias":0.22
+            },
+            {
+              "subcategoria_nombre":"Suspensión",
+              "num_incidencias":1.3
+            },
+            {
+              "subcategoria_nombre":"Fraude",
+              "num_incidencias":2.0
+            }
+          ]
+  
+        },
+        {
+          "nombre_categoria":"Otros negocios CHEC",
+          "num_incidencias": 8,
+          "imagen":"positivo",
+          "subcategoria":
+          [
+            {
+              "subcategoria_nombre":"SURA",
+              "num_incidencias":70.0
+            },
+            {
+              "subcategoria_nombre":"PFS",
+              "num_incidencias":30.0
+            },
+            {
+              "subcategoria_nombre":"PLAN EXEQUIAL AURORA",
+              "num_incidencias":0.0
+            },
+            {
+              "subcategoria_nombre":"LA PATRIA",
+              "num_incidencias":0.0
+            },
+            {
+              "subcategoria_nombre":"ALIADO COMERCIAL",
+              "num_incidencias":0.0
+            }
+          ]
+        },
+        {
+          "nombre_categoria":"Alertas",
+          "num_incidencias": 9,
+          "imagen":"negativo",
+          "subcategoria":
+          [
+            {
+              "subcategoria_nombre":"Demandar a la empresa",
+              "num_incidencias":20.0
+  
+            },
+            {
+              "subcategoria_nombre":"Fuga a otra compañía",
+              "num_incidencias":10.0
+            },
+            {
+              "subcategoria_nombre":"Renuncia al pago",
+              "num_incidencias":0.0
+            },
+            {
+              "subcategoria_nombre":"Reacción crítica",
+              "num_incidencias":70.0
+            }
+          ]
+  
+  
+        }
+      ],
+      "aPie": [
+       
+          {
+            "label":"Alegría",
+            "count":8.57
+          },
+          {
+            "label":"Confianza",
+            "count": 17.9
+          },
+          {
+            "label":"Enfado",
+            "count": 35.7
+          },
+          {
+            "label":"Incertidumbre",
+            "count": 11.7
+          },  
+          {
+            "label":"Sorpresa",
+            "count": 11.3
+          },
+          {
+            "label":"Tristeza",
+            "count": 14.533
+          }
+       
+      ],
+      "sentiment_map": [
+          {
+            "QUINCHIA": { "sentimiento":"negativo"},
+            "BALBOA": { "sentimiento":"sin_valor"},
+            "BELEN DE UMBRIA": { "sentimiento":"negativo"},
+            "MISTRATO": { "sentimiento":"neutro"},
+            "MANIZALES":{ "sentimiento":"negativo"},
+            "DOSQUEBRADAS":  { "sentimiento":"positivo"},
+            "LA VIRGINIA": { "sentimiento":"negativo"},
+            "CHINCHINA": { "sentimiento":"positivo"},
+            "PALESTINA":{ "sentimiento":"neutro"},
+            "VILLAMARIA": { "sentimiento":"negativo"},
+            "SANTA ROSA": { "sentimiento":"positivo"},
+            "RISARALDA":{ "sentimiento":"positivo"},
+            "ANSERMA": { "sentimiento":"negativo"},
+            "VITERBO":  { "sentimiento":"neutro"},
+            "NEIRA": { "sentimiento":"positivo"},
+            "MARMATO": { "sentimiento":"negativo"},
+            "PACORA": { "sentimiento":"neutro"},
+            "SUPIA": { "sentimiento":"neutro"},
+            "VICTORIA":{ "sentimiento":"negativo"},
+            "NORCASIA":  { "sentimiento":"neutro"},
+            "LA DORADA": { "sentimiento":"positivo"},
+            "MARULANDA": { "sentimiento":"negativo"},
+            "PENSILVANIA":  { "sentimiento":"positivo"},
+            "SAMANA": { "sentimiento":"negativo"},
+            "SALAMINA": { "sentimiento":"positivo"},
+            "AGUADAS": { "sentimiento":"negativo"},
+            "ARANZAZU": { "sentimiento":"negativo"},
+            "SAN JOSE": { "sentimiento":"neutro"},
+            "BELALCAZAR":  { "sentimiento":"positivo"},
+            "APIA": { "sentimiento":"negativo"},
+            "SANTUARIO": { "sentimiento":"positivo"},
+            "FILADELFIA": { "sentimiento":"negativo"},
+            "LA MERCED": { "sentimiento":"positivo"},
+            "RIOSUCIO": { "sentimiento":"positivo"},
+            "GUATICA": { "sentimiento":"sin_valor"},
+            "MARQUETALIA":{ "sentimiento":"negativo"},
+            "MANZANARES": { "sentimiento":"sin_valor"},
+            "LA CELIA": { "sentimiento":"negativo"},
+            "PUEBLO RICO": { "sentimiento":"negativo"}
+          }
+      ]
+    }
+  ]
+  
+  

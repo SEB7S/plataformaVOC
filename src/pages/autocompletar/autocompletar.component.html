@@ -1,0 +1,69 @@
+
+<label for="fecha" class="mx-3 my-0 p-0 label_inputs">
+			{{label}}</label>
+<div class="form-group  icon-addon addon mx-2 m-0">
+
+	<div class="progreso transition" *ngIf="bMultipleSeleccion" [ngStyle]="{ 'width': ( ((aCheckboxSeleccion.length * 100) / arrayFiltrado.length) * 0.98  )+ '%' }"></div>
+
+	<input id="campo_texto" #campo_texto placeholder="Buscar.." class="form-control" (focus)="fn_focusText($event)"  [(ngModel)]="input_entrada" (ngModelChange)="ServicesProvider.fn_filtrarInput($event,input_entrada,inputText$)">
+	<i [ngClass]="icon?icon:'fa fa-search'"  class="icono"></i>
+	<div class="autocompletar" [hidden]="!bShowAutocomplete" [ngStyle]="{ 'left':oCoorcampoTexto.x+'px', 'top':oCoorcampoTexto.y+'px' }">
+			<div class="container_buttons position-relative flex-center botones_autocomplear" [hidden]="!bShowAutocomplete"   [ngStyle]="{ 'left':oCoorcampoTexto.x+'px', 'top':((oCoorcampoTexto.y)-45)+'px' }"><!-- [ngStyle]="{ 'left':oCoorcampoTexto.x+'px', 'top':(oCoorcampoTexto.y)+'px' }"-->
+				<button type="button" class="btn btn-outline-success m-1" title="Aceptar" *ngIf="bMultipleSeleccion" (click)="fn_enviarSeleccionMultiple()" ><i class="fa fa-check"></i></button>
+				<button type="button" class="btn btn-outline-danger m-1" title="Cancelar" (click)="bShowAutocomplete=false;"><i class="fa fa-times"></i></button>
+		</div>
+
+		<div class="d-flex justify-content-end" *ngIf="bMultipleSeleccion">
+			<div>
+					<label class="custom-control custom-checkbox mr-1 d-flex w-100" >
+							<input type="checkbox" id="checkbox" [(ngModel)]="bMarcar"   class="custom-control-input" (change)="fn_selectAll()">
+							<span [title]="!bMarcar?'Marcar Todos':'Desmarcar Todos'" class="custom-control-label texto_pequeno_autocompletar flex-center">{{!bMarcar?'Marcar Todos':'Desmarcar Todos'}}</span>
+					</label>
+			</div>
+
+		</div>
+
+
+
+		<ng-container >
+			<div *ngFor="let item of aFiltradoElementos; let i=index" class="item_autocompletar" >
+				<div class="w-100 h-100 d-flex align-items-center" [ngClass]="item.check?'item_autocompletar_seleccion':''"  *ngIf="bMultipleSeleccion" >
+						<label class="custom-control custom-checkbox w-100 ml-2 ">
+								<input type="checkbox" id="checkbox" [(ngModel)]="item.check" class="custom-control-input" (change)="fn_addCheck(item)">
+								<span class="custom-control-label" *ngIf="sFiltroenArray">{{item[sFiltroenArray]}}</span>
+								<span class="custom-control-label" *ngIf="!sFiltroenArray">{{item[sFiltroenArray]}}</span>
+		
+						</label>
+				</div>
+
+				<div *ngIf="!bMultipleSeleccion"  (click)="fn_selectElement(item)" class="item_autocompletar w-100" >
+					<div >
+							<span *ngIf="sFiltroenArray" class="w-100" >
+									{{item[sFiltroenArray]}}
+							</span>
+							<span *ngIf="!sFiltroenArray"  class="w-100" >
+									{{item}}
+		
+							</span>
+					</div>
+
+
+				</div>
+
+
+				
+
+			</div>
+
+		</ng-container>
+
+		
+
+	</div>
+
+</div>
+<!--<div class="container_buttons position-relative flex-center botones_autocomplear" [hidden]="!bShowAutocomplete"  [ngStyle]="{ 'left':oCoorcampoTexto.x+'px', 'top':(oCoorcampoTexto.y+154)+'px' }">
+		<button type="button" class="btn btn-outline-success m-1" title="Aceptar" *ngIf="bMultipleSeleccion" (click)="fn_enviarSeleccionMultiple()" ><i class="fa fa-check"></i></button>
+		<button type="button" class="btn btn-outline-danger m-1" title="Cancelar" (click)="bShowAutocomplete=false;"><i class="fa fa-times"></i></button>
+</div>
+-->
